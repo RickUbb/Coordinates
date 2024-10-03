@@ -5,9 +5,9 @@ Este módulo contiene una función para normalizar texto, eliminando tildes, esp
 y realizando validaciones para asegurar que el texto esté en un formato limpio y estándar.
 """
 
-import pandas as pd  # Importa pandas para trabajar con la verificación de valores NaN
 import unicodedata  # Para la eliminación de tildes y normalización de caracteres Unicode
 import re  # Para trabajar con expresiones regulares
+import pandas as pd  # Importa pandas para trabajar con la verificación de valores NaN
 
 
 def normalize(text):
@@ -49,7 +49,7 @@ def normalize(text):
     text_str = unicodedata.normalize('NFD', text_str).encode(
         'ascii', 'ignore').decode('utf-8')
 
-    # Eliminar espacios extras y formatear el texto a formato de título (primera letra de cada palabra en mayúscula)
+    # Eliminar espacios extras y formatear texto a título (primera letra de cada palabra mayúscula)
     text_str = re.sub(r'\s+', ' ', text_str).strip().title()
 
     return text_str  # Retorna el texto ya normalizado
