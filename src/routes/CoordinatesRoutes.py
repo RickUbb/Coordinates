@@ -2,8 +2,9 @@
 CoordinatesRoutes.py
 
 Este módulo define las rutas para obtener coordenadas geográficas utilizando Flask. 
-La ruta principal permite recibir una solicitud con los nombres del país, provincia y ciudad, 
-y devuelve las coordenadas correspondientes si se encuentran en la base de datos o se consultan desde OpenStreetMap (OSM).
+La ruta principal permite recibir una solicitud con una lista de objetos que contienen el país, 
+provincia y ciudad, y devuelve las coordenadas correspondientes si se encuentran en la base 
+de datos o se consultan desde OpenStreetMap (OSM).
 """
 
 # Flask y utilidades para manejar solicitudes y respuestas
@@ -34,39 +35,70 @@ collection_name = mongo['mongodb_collection_name_coordinates']
 @main.route('/', methods=['POST'])
 def get_coordinates():
     """
-    Ruta POST para obtener coordenadas geográficas. Espera un JSON con los subniveles 1 (país), 
-    3 (provincia) y 4 (ciudad). Si faltan parámetros o son inválidos, retorna un error.
+    Ruta POST para obtener coordenadas geográficas. 
+    Espera un JSON que contenga una lista de objetos, donde cada objeto tiene los campos:
+    - country (subnivel_1)
+    - province (subnivel_3)
+    - city (subnivel_4)
 
     Returns:
-        JSON: Las coordenadas de la provincia (subnivel_3) y la ciudad (subnivel_4), o un mensaje de error.
+        JSON: Un objeto que contiene las coordenadas de cada objeto enviado en la solicitud, 
+        o un mensaje de error si alguno de los objetos tiene parámetros inválidos.
     """
     data = request.get_json()  # Obtener los datos del cuerpo de la solicitud en formato JSON
 
-    # Normalizar los datos de entrada (país, provincia, ciudad)
-    subnivel_1 = normalize(data['subnivel_1'])  # País
-    subnivel_3 = normalize(data['subnivel_3'])  # Provincia
-    subnivel_4 = normalize(data['subnivel_4'])  # Ciudad
+    # Verificar que el cuerpo de la solicitud sea una lista
+    if not isinstance(data, list):
+        return jsonify({"error": "El cuerpo de la solicitud debe ser una lista de objetos."}), 400
 
-    # Verificar si los parámetros requeridos están presentes
-    if not subnivel_1 or not subnivel_3 or not subnivel_4:
-        return jsonify({"error": "Faltan parámetros: subnivel_1, subnivel_3, subnivel_4 son requeridos"}), 400
+    results = []  # Lista para almacenar los resultados de cada objeto
+    errors = []   # Lista para almacenar errores de cada objeto
 
-    # Verificar si los valores de los subniveles son válidos
-    if subnivel_1 == "NA" or subnivel_3 == "NA" or subnivel_4 == "NA":
-        return jsonify({"error": "Faltan parámetros o son inconsistentes: subnivel_1, subnivel_3, subnivel_4 mal ingresados"}), 400
+    # Procesar cada objeto en la lista
+    for obj in data:
+        # Normalizar los datos de entrada (país, provincia, ciudad)
+        subnivel_1 = normalize(
+            obj['country']) if 'country' in obj and obj['country'] else "NA"
+        subnivel_3 = normalize(
+            obj['province']) if 'province' in obj and obj['province'] else "NA"
+        subnivel_4 = normalize(
+            obj['city']) if 'city' in obj and obj['city'] else "NA"
 
-    # Llamar a la función que busca o genera las coordenadas
-    lat_prov, lon_prov, lat_city, lon_city = obtener_coordenadas(
-        database_name, collection_name, subnivel_1, subnivel_3, subnivel_4)
+        # Verificar si los parámetros requeridos están presentes
+        if not subnivel_3 and not subnivel_4:
+            errors.append({"error": f"Faltan parámetros en el objeto: {
+                          obj}. Se requieren 'country', 'province' y 'city'."})
+            continue
 
-    # Si no se pudieron obtener las coordenadas, retornar un error de servidor
-    if not lat_prov or not lon_prov or not lat_city or not lon_city:
-        return jsonify({"error": "No se pudieron obtener las coordenadas"}), 500
+        # Verificar si los valores de los subniveles son válidos
+        if subnivel_3 == "NA" and subnivel_4 == "NA":
+            errors.append(
+                {"error": f"Parámetros inconsistentes en el objeto: {obj}."})
+            continue
 
-    # Si las coordenadas fueron obtenidas correctamente, retornarlas en formato JSON
+        # Llamar a la función que busca o genera las coordenadas
+        lat_prov, lon_prov, lat_city, lon_city = obtener_coordenadas(
+            database_name, collection_name, subnivel_1, subnivel_3, subnivel_4)
+
+        # Si no se pudieron obtener las coordenadas, registrar el error
+        if (not lat_prov or not lon_prov) and (not lat_city or not lon_city):
+            errors.append(
+                {"error": f"No se pudieron obtener las coordenadas para el objeto: {obj}."})
+            continue
+
+        # Si las coordenadas fueron obtenidas correctamente, agregarlas a los resultados
+        result = {}
+        if subnivel_3 != "NA":
+            result["lat_subnivel_3"] = lat_prov
+            result["lon_subnivel_3"] = lon_prov
+        if subnivel_4 != "NA":
+            result["lat_subnivel_4"] = lat_city
+            result["lon_subnivel_4"] = lon_city
+
+        results.append(result)
+
+    # Retornar los resultados y los errores
     return jsonify({
-        "lat_subnivel_3": lat_prov,  # Latitud de la provincia
-        "lon_subnivel_3": lon_prov,  # Longitud de la provincia
-        "lat_subnivel_4": lat_city,  # Latitud de la ciudad
-        "lon_subnivel_4": lon_city   # Longitud de la ciudad
-    })
+        "results": results,
+        "errors": errors
+    }), 200

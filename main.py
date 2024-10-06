@@ -29,4 +29,4 @@ if __name__ == '__main__':
     Aquí es donde se inicializa la app Flask y se ejecuta el servidor web de Flask.
     """
     app = initialize_app()  # Inicializa la aplicación Flask
-    app.run()  # Ejecuta la aplicación en el servidor local
+    app.run(debug=True)  # Ejecuta la aplicación en el servidor local
