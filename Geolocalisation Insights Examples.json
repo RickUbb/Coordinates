@@ -1,2810 +1,2810 @@
 {
     "Geolocalización Insights": {
-        "Facebook": {
-            "Ecuador": [
+        "Instagram": {
+            "General": [
                 {
-                    "city": "Durán",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 132
+                    "count": 106,
+                    "province": "Gobernador Ingeniero Valentín Virasoro, Corrientes",
+                    "city": "Gobernador Ingeniero Valentín Virasoro"
                 },
                 {
+                    "count": 37,
+                    "city": "Sauce",
+                    "province": "Corrientes"
+                },
+                {
+                    "count": 157,
+                    "province": "San Luis del Palmar, Corrientes",
+                    "city": "San Luis del Palmar"
+                },
+                {
+                    "count": 138,
+                    "city": "Esquina",
+                    "province": "Corrientes"
+                },
+                {
+                    "count": 39,
+                    "province": "Itá Ibaté, Corrientes",
+                    "city": "Itá Ibaté"
+                },
+                {
+                    "count": 38,
+                    "province": "La Cruz, Corrientes",
+                    "city": "La Cruz"
+                },
+                {
+                    "count": 114,
+                    "city": "Formosa",
+                    "province": "Formosa"
+                },
+                {
+                    "count": 68,
+                    "province": "Santa Lucía, Corrientes",
+                    "city": "Santa Lucía"
+                },
+                {
+                    "count": 553,
+                    "province": "Buenos Aires, Ciudad Autónoma de Buenos Aires",
+                    "city": "Buenos Aires"
+                },
+                {
+                    "count": 58,
+                    "province": "Taoyüan, Taoyuan City",
+                    "city": "Taoyüan"
+                },
+                {
+                    "count": 49,
+                    "city": "Lavalle",
+                    "province": "Corrientes"
+                },
+                {
+                    "count": 65,
+                    "city": "Taipei",
+                    "province": "Taipei"
+                },
+                {
+                    "count": 165,
+                    "city": "Riachuelo",
+                    "province": "Corrientes"
+                },
+                {
+                    "count": 220,
+                    "province": "Córdoba, Córdoba",
+                    "city": "Córdoba"
+                },
+                {
+                    "count": 390,
+                    "city": "Goya",
+                    "province": "Corrientes"
+                },
+                {
+                    "count": 38,
+                    "province": "Ho Chi Minh City, Ho Chi Minh City",
+                    "city": "Ho Chi Minh City"
+                },
+                {
+                    "count": 91,
+                    "province": "Monte Caseros, Corrientes",
+                    "city": "Monte Caseros"
+                },
+                {
+                    "count": 108,
+                    "province": "Laguna Brava, Corrientes",
+                    "city": "Laguna Brava"
+                },
+                {
+                    "count": 69,
+                    "province": "Mburucuyá, Corrientes",
+                    "city": "Mburucuyá"
+                },
+                {
+                    "count": 304,
+                    "city": "Xinbei",
+                    "province": "New Taipei City"
+                },
+                {
+                    "count": 28,
+                    "province": "Mocoretá, Corrientes",
+                    "city": "Mocoretá"
+                },
+                {
+                    "count": 134,
+                    "city": "Saladas",
+                    "province": "Corrientes"
+                },
+                {
+                    "count": 45,
+                    "province": "Chaco",
+                    "city": "Barranqueras"
+                },
+                {
+                    "count": 30,
+                    "province": "Corrientes",
+                    "city": "Alvear"
+                },
+                {
+                    "count": 65,
+                    "province": "Presidencia Roque Sáenz Peña, Chaco",
+                    "city": "Presidencia Roque Sáenz Peña"
+                },
+                {
+                    "count": 44,
+                    "province": "Santa Rosa, Corrientes",
+                    "city": "Santa Rosa"
+                },
+                {
+                    "count": 122,
+                    "province": "Curuzú Cuatiá, Corrientes",
+                    "city": "Curuzú Cuatiá"
+                },
+                {
+                    "count": 36,
+                    "province": "Caa Catí, Corrientes",
+                    "city": "Caa Catí"
+                },
+                {
+                    "count": 15091,
+                    "city": "Corrientes",
+                    "province": "Corrientes"
+                },
+                {
+                    "count": 45,
+                    "province": "San Miguel, Corrientes",
+                    "city": "San Miguel"
+                },
+                {
+                    "count": 58,
+                    "province": "San Roque, Corrientes",
+                    "city": "San Roque"
+                },
+                {
+                    "count": 304,
+                    "province": "Bella Vista, Corrientes",
+                    "city": "Bella Vista"
+                },
+                {
+                    "count": 30,
+                    "city": "Salta",
+                    "province": "Salta"
+                },
+                {
+                    "count": 155,
+                    "province": "San Cosme, Corrientes",
+                    "city": "San Cosme"
+                },
+                {
+                    "count": 145,
+                    "province": "Ituzaingó, Corrientes",
+                    "city": "Ituzaingó"
+                },
+                {
+                    "count": 214,
+                    "province": "Paso de los Libres, Corrientes",
+                    "city": "Paso de los Libres"
+                },
+                {
+                    "count": 135,
+                    "province": "Santo Tomé, Corrientes",
+                    "city": "Santo Tomé"
+                },
+                {
+                    "count": 90,
+                    "city": "Empedrado",
+                    "province": "Corrientes"
+                },
+                {
+                    "count": 72,
+                    "province": "Itatí, Corrientes",
+                    "city": "Itatí"
+                },
+                {
+                    "count": 61,
+                    "province": "Santa Fe",
+                    "city": "Rosario"
+                },
+                {
+                    "count": 62,
+                    "province": "Paso de la Patria, Corrientes",
+                    "city": "Paso de la Patria"
+                },
+                {
+                    "count": 163,
+                    "city": "Posadas",
+                    "province": "Misiones"
+                },
+                {
+                    "count": 28,
+                    "province": "Concepción, Corrientes",
+                    "city": "Concepción"
+                },
+                {
+                    "count": 201,
+                    "city": "Mercedes",
+                    "province": "Corrientes"
+                },
+                {
+                    "count": 548,
+                    "city": "Resistencia",
+                    "province": "Chaco"
+                },
+                {
+                    "count": 4,
+                    "city": "Caracas",
+                    "province": "Capital District"
+                },
+                {
+                    "count": 5,
+                    "province": "São Paulo, São Paulo (state)",
+                    "city": "São Paulo"
+                },
+                {
+                    "count": 30,
+                    "province": "Izabal Department",
+                    "city": "Izabal"
+                },
+                {
+                    "count": 21,
+                    "province": "San Marcos, San Marcos Department",
+                    "city": "San Marcos"
+                },
+                {
+                    "count": 4,
+                    "province": "Salcajá, Totonicapán Department",
+                    "city": "Salcajá"
+                },
+                {
+                    "count": 5,
+                    "province": "Aguacatán, Huehuetenango Department",
+                    "city": "Aguacatán"
+                },
+                {
+                    "count": 6,
                     "city": "Quito",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 698
+                    "province": "Pichincha Province"
                 },
                 {
-                    "city": "Santa Rosa",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 86
+                    "count": 8,
+                    "province": "Rio de Janeiro, Rio de Janeiro (state)",
+                    "city": "Rio de Janeiro"
                 },
                 {
-                    "city": "Daule",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 103
+                    "count": 12,
+                    "province": "Huehuetenango Department",
+                    "city": "Huehuetenango"
                 },
                 {
-                    "city": "Esmeraldas",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 138
+                    "count": 3,
+                    "province": "San Cristóbal, Totonicapán Department",
+                    "city": "San Cristóbal"
                 },
                 {
-                    "city": "Samborondón",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 46
+                    "count": 3,
+                    "city": "Sanaa",
+                    "province": "Sana'a Governorate"
                 },
                 {
-                    "city": "Naranjal",
-                    "province": " Ecuador",
-                    "country": " Ecuador",
-                    "count": 67
+                    "count": 7,
+                    "province": "Montevideo Department",
+                    "city": "Montevideo"
                 },
                 {
-                    "city": "Cuenca",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 223
+                    "count": 12,
+                    "province": "San Salvador, San Salvador Department",
+                    "city": "San Salvador"
                 },
                 {
-                    "city": "Velasco Ibarra",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 51
+                    "count": 7,
+                    "province": "Santo Domingo, Distrito Nacional",
+                    "city": "Santo Domingo"
                 },
                 {
-                    "city": "Montecristi",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 38
+                    "count": 6,
+                    "province": "Suchitepéquez Department",
+                    "city": "Mazatenango"
                 },
                 {
-                    "city": "Santa Lucía",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 44
+                    "count": 15,
+                    "province": "Bogotá, Distrito Especial",
+                    "city": "Bogotá"
                 },
                 {
-                    "city": "La Maná",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 39
+                    "count": 5,
+                    "province": "Buenos Aires, Ciudad Autónoma de Buenos Aires",
+                    "city": "Buenos Aires"
                 },
                 {
-                    "city": "Jipijapa",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 74
+                    "count": 5,
+                    "province": "Totonicapán, Totonicapán Department",
+                    "city": "Totonicapán"
                 },
                 {
-                    "city": "Quevedo",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 172
+                    "count": 8,
+                    "province": "Huehuetenango Department",
+                    "city": "Cuilco"
                 },
                 {
-                    "city": "Milagro",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 172
+                    "count": 15,
+                    "city": "Mixco",
+                    "province": "Guatemala Department"
                 },
                 {
-                    "city": "La Libertad",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 67
+                    "count": 23,
+                    "province": "Cobán, Alta Verapaz Department",
+                    "city": "Cobán"
                 },
                 {
-                    "city": "Guayaquil",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 1951
+                    "count": 6,
+                    "province": "Brasília, Federal District",
+                    "city": "Brasília"
                 },
                 {
-                    "city": "La Troncal",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 44
+                    "count": 6,
+                    "province": "Santa Cruz del Quiché, Quiché Department",
+                    "city": "Santa Cruz del Quiché"
                 },
                 {
-                    "city": "Loja",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 166
+                    "count": 4,
+                    "city": "Baku",
+                    "province": "Baku"
                 },
                 {
-                    "city": "Pasaje",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 53
+                    "count": 22,
+                    "province": "Panama City, Panamá Province",
+                    "city": "Panama City"
                 },
                 {
-                    "city": "Ambato",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 204
+                    "count": 5,
+                    "province": "La Paz, La Paz Department",
+                    "city": "La Paz"
                 },
                 {
-                    "city": "Buena Fe",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 52
+                    "count": 4,
+                    "province": "Zacapa Department",
+                    "city": "Zacapa"
                 },
                 {
-                    "city": "Ventanas",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 63
+                    "count": 5,
+                    "province": "Managua Department",
+                    "city": "Managua"
                 },
                 {
-                    "city": "Azogues",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 37
+                    "count": 15,
+                    "province": "Villa Nueva, Guatemala Department",
+                    "city": "Villa Nueva"
                 },
                 {
-                    "city": "Montalvo",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 50
+                    "count": 4,
+                    "province": "Escuintla Department",
+                    "city": "Escuintla"
                 },
                 {
+                    "count": 63,
+                    "province": "Quetzaltenango Department",
+                    "city": "Quetzaltenango"
+                },
+                {
+                    "count": 5,
+                    "province": "Chimaltenango Department",
+                    "city": "Chimaltenango"
+                },
+                {
+                    "count": 5,
+                    "province": "Amman Governorate",
+                    "city": "Amman"
+                },
+                {
+                    "count": 7,
+                    "province": "Lima Region",
+                    "city": "Lima"
+                },
+                {
+                    "count": 4,
+                    "province": "San José, San José Province",
+                    "city": "San José"
+                },
+                {
+                    "count": 23,
+                    "province": "Mexico City, Distrito Federal",
+                    "city": "Mexico City"
+                },
+                {
+                    "count": 4,
+                    "province": "Baghdad Governorate",
+                    "city": "Baghdad"
+                },
+                {
+                    "count": 5,
+                    "city": "Tegucigalpa",
+                    "province": "Francisco Morazán Department"
+                },
+                {
+                    "count": 5,
+                    "city": "Tactic",
+                    "province": "Alta Verapaz Department"
+                },
+                {
+                    "count": 6,
+                    "province": "Cairo Governorate",
+                    "city": "Cairo"
+                },
+                {
+                    "count": 1089,
+                    "province": "Guatemala City, Guatemala Department",
+                    "city": "Guatemala City"
+                },
+                {
+                    "count": 4,
+                    "province": "Jutiapa Department",
+                    "city": "Atescatempa"
+                },
+                {
+                    "count": 6,
+                    "province": "Chiquimula Department",
+                    "city": "Chiquimula"
+                },
+                {
+                    "count": 5,
+                    "province": "Puerto Barrios, Izabal Department",
+                    "city": "Puerto Barrios"
+                },
+                {
+                    "count": 5,
+                    "province": "Sololá Department",
+                    "city": "Panajachel"
+                },
+                {
+                    "count": 38,
+                    "province": "Dhaka Division",
+                    "city": "Dhaka"
+                },
+                {
+                    "count": 27,
+                    "city": "Bishkek",
+                    "province": "Bishkek"
+                },
+                {
+                    "count": 9306,
+                    "province": "Guayas Province",
+                    "city": "Guayaquil"
+                },
+                {
+                    "count": 185,
                     "city": "Riobamba",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 165
+                    "province": "Chimborazo Province"
                 },
                 {
-                    "city": "Babahoyo",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 174
-                },
-                {
-                    "city": "Salinas",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 41
-                },
-                {
-                    "city": "Santa Elena",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 85
-                },
-                {
-                    "city": "Machala",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 250
-                },
-                {
-                    "city": "Manta",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 147
-                },
-                {
-                    "city": "Nueva York",
-                    "province": "",
-                    "country": " Estados Unidos",
-                    "count": 85
-                },
-                {
-                    "city": "Santo Domingo",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 205
-                },
-                {
-                    "city": "General Villamil",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 39
-                },
-                {
-                    "city": "Nueva Loja",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 45
-                },
-                {
-                    "city": "Latacunga",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 72
-                },
-                {
-                    "city": "Chone",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 78
-                },
-                {
-                    "city": "Puerto Francisco de Orellana",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 38
-                },
-                {
-                    "city": "El Carmen",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 49
-                },
-                {
-                    "city": "Puyo",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 59
-                },
-                {
-                    "city": "Ibarra",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 83
-                },
-                {
-                    "city": "Vinces",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 92
-                },
-                {
-                    "city": "Portoviejo",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 195
-                },
-                {
-                    "city": "Huaquillas",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 60
-                },
-                {
-                    "city": "Rosa Zárate",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 60
-                },
-                {
-                    "city": "Durán",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 2492
-                },
-                {
-                    "city": "Quito",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 40370
-                },
-                {
-                    "city": "Santa Rosa",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 920
-                },
-                {
-                    "city": "Daule",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 1464
-                },
-                {
-                    "city": "Conocoto",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 1174
-                },
-                {
-                    "city": "Esmeraldas",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 2461
-                },
-                {
-                    "city": "Cuenca",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 8564
-                },
-                {
-                    "city": "Montecristi",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 641
-                },
-                {
-                    "city": "Tulcán",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 896
-                },
-                {
-                    "city": "Jipijapa",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 960
-                },
-                {
+                    "count": 84,
                     "city": "Quevedo",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 2504
+                    "province": "Los Ríos Province"
                 },
                 {
-                    "city": "Milagro",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 2823
+                    "count": 3594,
+                    "city": "Quito",
+                    "province": "Pichincha Province"
                 },
                 {
-                    "city": "La Libertad",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 1333
+                    "count": 45,
+                    "province": "Hong Kong, Hong Kong",
+                    "city": "Hong Kong"
                 },
                 {
+                    "count": 31,
+                    "province": "Manabí Province",
+                    "city": "Chone"
+                },
+                {
+                    "count": 155,
+                    "province": "Pichincha Province",
+                    "city": "Conocoto"
+                },
+                {
+                    "count": 289,
+                    "province": "Calderón, Pichincha Province",
+                    "city": "Calderón"
+                },
+                {
+                    "count": 55,
+                    "province": "Bogotá, Distrito Especial",
+                    "city": "Bogotá"
+                },
+                {
+                    "count": 29,
+                    "province": "Buenos Aires, Ciudad Autónoma de Buenos Aires",
+                    "city": "Buenos Aires"
+                },
+                {
+                    "count": 34,
+                    "province": "Alangasí, Pichincha Province",
+                    "city": "Alangasí"
+                },
+                {
+                    "count": 48,
+                    "province": "Los Ríos Province",
+                    "city": "Babahoyo"
+                },
+                {
+                    "count": 196,
+                    "province": "Loja Province",
+                    "city": "Loja"
+                },
+                {
+                    "count": 357,
+                    "province": "Guayas Province",
+                    "city": "Daule"
+                },
+                {
+                    "count": 29,
+                    "province": "Esmeraldas Province",
+                    "city": "Esmeraldas"
+                },
+                {
+                    "count": 29,
                     "city": "Guaranda",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 687
+                    "province": "Bolívar Province"
                 },
                 {
-                    "city": "Guayaquil",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 50211
+                    "count": 30,
+                    "province": "Ho Chi Minh City, Ho Chi Minh City",
+                    "city": "Ho Chi Minh City"
                 },
                 {
-                    "city": "La Troncal",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 680
+                    "count": 124,
+                    "city": "Tumbaco",
+                    "province": "Pichincha Province"
                 },
                 {
-                    "city": "Loja",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 4329
+                    "count": 118,
+                    "province": "Imbabura Province",
+                    "city": "Ibarra"
                 },
                 {
-                    "city": "Pasaje",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 869
+                    "count": 29,
+                    "city": "Minsk",
+                    "province": "Minsk"
                 },
                 {
-                    "city": "Ambato",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 5289
-                },
-                {
-                    "city": "Otavalo",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 765
-                },
-                {
-                    "city": "Buena Fe",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 650
-                },
-                {
-                    "city": "Azogues",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 944
-                },
-                {
-                    "city": "Babahoyo",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 2038
-                },
-                {
-                    "city": "Riobamba",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 4200
-                },
-                {
-                    "city": "Sangolquí",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 1286
-                },
-                {
-                    "city": "Cayambe",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 737
-                },
-                {
-                    "city": "Salinas",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 722
-                },
-                {
-                    "city": "Santa Elena",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 1149
-                },
-                {
-                    "city": "Machala",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 4949
-                },
-                {
+                    "count": 416,
                     "city": "Manta",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 5528
+                    "province": "Manabí Province"
                 },
                 {
-                    "city": "Nueva York",
-                    "province": "",
-                    "country": " Estados Unidos",
-                    "count": 1788
+                    "count": 35,
+                    "province": "Santa Elena Province",
+                    "city": "Salinas"
                 },
                 {
-                    "city": "Calderón",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 961
-                },
-                {
-                    "city": "Santo Domingo",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 4945
-                },
-                {
-                    "city": "Nueva Loja",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 913
-                },
-                {
-                    "city": "Tena",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 739
-                },
-                {
-                    "city": "Latacunga",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 1979
-                },
-                {
-                    "city": "Chone",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 1118
-                },
-                {
-                    "city": "Vinces",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 607
-                },
-                {
-                    "city": "Puerto Francisco de Orellana",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 765
-                },
-                {
-                    "city": "El Carmen",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 826
-                },
-                {
-                    "city": "Puyo",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 887
-                },
-                {
-                    "city": "Ibarra",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 3141
-                },
-                {
+                    "count": 225,
                     "city": "Portoviejo",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 4512
+                    "province": "Manabí Province"
                 },
                 {
-                    "city": "Rosa Zárate",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 797
+                    "count": 332,
+                    "city": "Machala",
+                    "province": "El Oro Province"
                 },
                 {
-                    "city": "Huaquillas",
-                    "province": "",
-                    "country": " Ecuador",
-                    "count": 828
+                    "count": 65,
+                    "province": "Lima Region",
+                    "city": "Lima"
+                },
+                {
+                    "count": 451,
+                    "province": "Santo Domingo de los Colorados, Santo Domingo de los Tsáchilas Province",
+                    "city": "Santo Domingo de los Colorados"
+                },
+                {
+                    "count": 40,
+                    "province": "La Libertad, Santa Elena Province",
+                    "city": "La Libertad"
+                },
+                {
+                    "count": 35,
+                    "province": "Istanbul Province",
+                    "city": "Istanbul"
+                },
+                {
+                    "count": 31,
+                    "province": "Mexico City, Distrito Federal",
+                    "city": "Mexico City"
+                },
+                {
+                    "count": 50,
+                    "city": "Pomasqui",
+                    "province": "Pichincha Province"
+                },
+                {
+                    "count": 389,
+                    "province": "Durán, Guayas Province",
+                    "city": "Durán"
+                },
+                {
+                    "count": 28,
+                    "province": "Tehran Province",
+                    "city": "Tehran"
+                },
+                {
+                    "count": 64,
+                    "province": "New York, New York",
+                    "city": "New York"
+                },
+                {
+                    "count": 37,
+                    "city": "Dubai",
+                    "province": "Dubai"
+                },
+                {
+                    "count": 42,
+                    "province": "Santiago Metropolitan Region",
+                    "city": "Santiago"
+                },
+                {
+                    "count": 134,
+                    "province": "Tungurahua Province",
+                    "city": "Ambato"
+                },
+                {
+                    "count": 128,
+                    "city": "Milagro",
+                    "province": "Guayas Province"
+                },
+                {
+                    "count": 52,
+                    "city": "Singapore",
+                    "province": "Singapore"
+                },
+                {
+                    "count": 44,
+                    "city": "Latacunga",
+                    "province": "Cotopaxi Province"
+                },
+                {
+                    "count": 162,
+                    "province": "Sangolquí, Pichincha Province",
+                    "city": "Sangolquí"
+                },
+                {
+                    "count": 667,
+                    "city": "Cuenca",
+                    "province": "Azuay Province"
+                },
+                {
+                    "count": 74,
+                    "province": "Cumbayá, Pichincha Province",
+                    "city": "Cumbayá"
+                },
+                {
+                    "count": 31,
+                    "province": "Santa Cruz de la Sierra, Santa Cruz Department",
+                    "city": "Santa Cruz de la Sierra"
+                },
+                {
+                    "count": 7,
+                    "city": "Philadelphia",
+                    "province": "Pennsylvania"
+                },
+                {
+                    "count": 7,
+                    "province": "La Vega Province",
+                    "city": "Jarabacoa"
+                },
+                {
+                    "count": 7,
+                    "province": "Sánchez Ramírez Province",
+                    "city": "Fantino"
+                },
+                {
+                    "count": 28,
+                    "province": "São Paulo, São Paulo (state)",
+                    "city": "São Paulo"
+                },
+                {
+                    "count": 42,
+                    "province": "La Romana, La Romana Province",
+                    "city": "La Romana"
+                },
+                {
+                    "count": 14,
+                    "province": "Valverde Province",
+                    "city": "Mao"
+                },
+                {
+                    "count": 9,
+                    "province": "Cotuí, Sánchez Ramírez Province",
+                    "city": "Cotuí"
+                },
+                {
+                    "count": 13,
+                    "province": "Azua de Compostela, Azua Province",
+                    "city": "Azua de Compostela"
+                },
+                {
+                    "count": 8,
+                    "province": "Bávaro, La Altagracia Province",
+                    "city": "Bávaro"
+                },
+                {
+                    "count": 16,
+                    "province": "Bajos de Haina, San Cristóbal Province",
+                    "city": "Bajos de Haina"
+                },
+                {
+                    "count": 18,
+                    "province": "Saint Catherine Parish",
+                    "city": "Portmore"
+                },
+                {
+                    "count": 36,
+                    "province": "Puerto Plata, Puerto Plata province",
+                    "city": "Puerto Plata"
+                },
+                {
+                    "count": 10,
+                    "province": "Rio de Janeiro, Rio de Janeiro (state)",
+                    "city": "Rio de Janeiro"
+                },
+                {
+                    "count": 13,
+                    "province": "Jima Abajo, La Vega Province",
+                    "city": "Jima Abajo"
+                },
+                {
+                    "count": 15,
+                    "province": "Baní, Peravia Province",
+                    "city": "Baní"
+                },
+                {
+                    "count": 47,
+                    "city": "Willemstad",
+                    "province": "Curaçao"
+                },
+                {
+                    "count": 8,
+                    "city": "Oranjestad",
+                    "province": "Aruba"
+                },
+                {
+                    "count": 6,
+                    "province": "Trelawny Parish",
+                    "city": "Falmouth"
+                },
+                {
+                    "count": 783,
+                    "province": "Santo Domingo, Distrito Nacional",
+                    "city": "Santo Domingo"
+                },
+                {
+                    "count": 38,
+                    "province": "San Francisco de Macorís, Duarte Province",
+                    "city": "San Francisco de Macorís"
+                },
+                {
+                    "count": 7,
+                    "province": "Dajabón, Dajabón Province",
+                    "city": "Dajabón"
+                },
+                {
+                    "count": 14,
+                    "province": "Spanish Town, Saint Catherine Parish",
+                    "city": "Spanish Town"
+                },
+                {
+                    "count": 8,
+                    "city": "Mandeville",
+                    "province": "Manchester Parish"
+                },
+                {
+                    "count": 11,
+                    "province": "Montego Bay, Saint James Parish",
+                    "city": "Montego Bay"
+                },
+                {
+                    "count": 6,
+                    "province": "Villa Tapia, Salcedo",
+                    "city": "Villa Tapia"
+                },
+                {
+                    "count": 11,
+                    "province": "Valverde Province",
+                    "city": "Esperanza"
+                },
+                {
+                    "count": 12,
+                    "province": "San Juan de la Maguana, San Juan Province (Dominican Republic)",
+                    "city": "San Juan de la Maguana"
+                },
+                {
+                    "count": 11,
+                    "city": "Tamboril",
+                    "province": "Santiago Province"
+                },
+                {
+                    "count": 33,
+                    "province": "Higüey, La Altagracia Province",
+                    "city": "Higüey"
+                },
+                {
+                    "count": 167,
+                    "province": "Saint Andrew Parish",
+                    "city": "Kingston"
+                },
+                {
+                    "count": 23,
+                    "city": "Moca",
+                    "province": "Espaillat Province"
+                },
+                {
+                    "count": 8,
+                    "province": "Monte Cristi, Monte Cristi Province",
+                    "city": "Monte Cristi"
+                },
+                {
+                    "count": 18,
+                    "province": "Monseñor Nouel Province",
+                    "city": "Bonao"
+                },
+                {
+                    "count": 9,
+                    "province": "Boca Chica, Santo Domingo Province",
+                    "city": "Boca Chica"
+                },
+                {
+                    "count": 13,
+                    "city": "Nagua",
+                    "province": "María Trinidad Sánchez Province"
+                },
+                {
+                    "count": 6,
+                    "city": "Newark",
+                    "province": "New Jersey"
+                },
+                {
+                    "count": 6,
+                    "province": "Villa Bisonó, Santiago Province",
+                    "city": "Villa Bisonó"
+                },
+                {
+                    "count": 201,
+                    "province": "New York, New York",
+                    "city": "New York"
+                },
+                {
+                    "count": 7,
+                    "province": "Belo Horizonte, Minas Gerais",
+                    "city": "Belo Horizonte"
+                },
+                {
+                    "count": 15,
+                    "city": "Paterson",
+                    "province": "New Jersey"
+                },
+                {
+                    "count": 207,
+                    "province": "Santiago Province",
+                    "city": "Santiago"
+                },
+                {
+                    "count": 22,
+                    "province": "Los Alcarrizos, Santo Domingo Province",
+                    "city": "Los Alcarrizos"
+                },
+                {
+                    "count": 11,
+                    "province": "Massachusetts",
+                    "city": "Boston"
+                },
+                {
+                    "count": 30,
+                    "province": "San Pedro de Macorís, San Pedro de Macorís Province",
+                    "city": "San Pedro de Macorís"
+                },
+                {
+                    "count": 27,
+                    "province": "La Vega, La Vega Province",
+                    "city": "La Vega"
                 }
-            ],
-            "Colombia": [
-                {
-                    "city": "Barbosa",
-                    "province": "",
-                    "country": " Colombia",
-                    "count": 175
-                },
-                {
-                    "city": "Caucasia",
-                    "province": "",
-                    "country": " Colombia",
-                    "count": 238
-                },
-                {
-                    "city": "Marinilla",
-                    "province": "",
-                    "country": " Colombia",
-                    "count": 146
-                },
-                {
-                    "city": "Villavicencio",
-                    "province": " Meta",
-                    "country": " Colombia",
-                    "count": 233
-                },
-                {
-                    "city": "Puerto Berrío",
-                    "province": "",
-                    "country": " Colombia",
-                    "count": 107
-                },
-                {
-                    "city": "Turbo",
-                    "province": "",
-                    "country": " Colombia",
-                    "count": 107
-                },
-                {
-                    "city": "Pasto",
-                    "province": "",
-                    "country": " Colombia",
-                    "count": 227
-                },
-                {
-                    "city": "Medellín",
-                    "province": "",
-                    "country": " Colombia",
-                    "count": 12645
-                },
-                {
-                    "city": "Barrancabermeja",
-                    "province": " Santander",
-                    "country": " Colombia",
-                    "count": 137
-                },
-                {
-                    "city": "Barranquilla",
-                    "province": "",
-                    "country": " Colombia",
-                    "count": 300
-                },
-                {
-                    "city": "Santa Marta",
-                    "province": "",
-                    "country": " Colombia",
-                    "count": 250
-                },
-                {
-                    "city": "Amagá",
-                    "province": "",
-                    "country": " Colombia",
-                    "count": 131
-                },
-                {
-                    "city": "Cali",
-                    "province": "",
-                    "country": " Colombia",
-                    "count": 678
-                },
-                {
-                    "city": "Palmira",
-                    "province": "",
-                    "country": " Colombia",
-                    "count": 112
-                },
-                {
-                    "city": "Sabaneta",
-                    "province": "",
-                    "country": " Colombia",
-                    "count": 304
-                },
-                {
-                    "city": "Apartadó",
-                    "province": "",
-                    "country": " Colombia",
-                    "count": 314
-                },
-                {
-                    "city": "Santa Rosa de Osos",
-                    "province": "",
-                    "country": " Colombia",
-                    "count": 206
-                },
-                {
-                    "city": "Envigado",
-                    "province": "",
-                    "country": " Colombia",
-                    "count": 604
-                },
-                {
-                    "city": "El Bagre",
-                    "province": "",
-                    "country": " Colombia",
-                    "count": 104
-                },
-                {
-                    "city": "Giradota",
-                    "province": " Antioquia",
-                    "country": " Colombia",
-                    "count": 195
-                },
-                {
-                    "city": "El Carmen de Viboral",
-                    "province": "",
-                    "country": " Colombia",
-                    "count": 116
-                },
-                {
-                    "city": "Montería",
-                    "province": "",
-                    "country": " Colombia",
-                    "count": 153
-                },
-                {
-                    "city": "Ibagué",
-                    "province": "",
-                    "country": " Colombia",
-                    "count": 327
-                },
-                {
-                    "city": "Andes",
-                    "province": "",
-                    "country": " Colombia",
-                    "count": 114
-                },
-                {
-                    "city": "Bucaramanga",
-                    "province": " Santander",
-                    "country": " Colombia",
-                    "count": 321
-                },
-                {
-                    "city": "Guarne",
-                    "province": "",
-                    "country": " Colombia",
-                    "count": 190
-                },
-                {
-                    "city": "Segovia",
-                    "province": "",
-                    "country": " Colombia",
-                    "count": 128
-                },
-                {
-                    "city": "Manizales",
-                    "province": "",
-                    "country": " Colombia",
-                    "count": 288
-                },
-                {
-                    "city": "La Estrella",
-                    "province": "",
-                    "country": " Colombia",
-                    "count": 157
-                },
-                {
-                    "city": "Bello",
-                    "province": "",
-                    "country": " Colombia",
-                    "count": 1292
-                },
-                {
-                    "city": "Pereira",
-                    "province": "",
-                    "country": " Colombia",
-                    "count": 345
-                },
-                {
-                    "city": "Dosquebradas",
-                    "province": "",
-                    "country": " Colombia",
-                    "count": 103
-                },
-                {
-                    "city": "La Ceja",
-                    "province": " Antioquia",
-                    "country": " Colombia",
-                    "count": 368
-                },
-                {
-                    "city": "Bogotá",
-                    "province": "",
-                    "country": " Colombia",
-                    "count": 3047
-                },
-                {
-                    "city": "Cúcuta",
-                    "province": "",
-                    "country": " Colombia",
-                    "count": 265
-                },
-                {
-                    "city": "Rionegro",
-                    "province": "",
-                    "country": " Colombia",
-                    "count": 701
-                },
-                {
-                    "city": "Sincelejo",
-                    "province": " Sucre",
-                    "country": " Colombia",
-                    "count": 116
-                },
-                {
-                    "city": "Armenia",
-                    "province": "",
-                    "country": " Colombia",
-                    "count": 194
-                },
-                {
-                    "city": "Copacabana",
-                    "province": "",
-                    "country": " Colombia",
-                    "count": 335
-                },
-                {
-                    "city": "Yarumal",
-                    "province": "",
-                    "country": " Colombia",
-                    "count": 126
-                },
-                {
-                    "city": "Neiva",
-                    "province": " Huila",
-                    "country": " Colombia",
-                    "count": 124
-                },
-                {
-                    "city": "Popayán",
-                    "province": "",
-                    "country": " Colombia",
-                    "count": 209
-                },
-                {
-                    "city": "Itagüí",
-                    "province": "",
-                    "country": " Colombia",
-                    "count": 850
-                },
-                {
-                    "city": "Caldas",
-                    "province": "",
-                    "country": " Colombia",
-                    "count": 285
-                },
-                {
-                    "city": "Cartagena de Indias",
-                    "province": "",
-                    "country": " Colombia",
-                    "count": 287
-                }
-            ],
+            ]
+        },
+        "Facebook": {
             "República Dominicana": [
                 {
+                    "count": 473,
                     "city": "Yaguate",
-                    "province": "",
                     "country": " Dominican Republic",
-                    "count": 473
+                    "province": ""
                 },
                 {
+                    "count": 1780,
                     "city": "Bajos de Haina",
-                    "province": "",
                     "country": " Dominican Republic",
-                    "count": 1780
+                    "province": ""
                 },
                 {
+                    "count": 392,
                     "city": "San Gregorio de Nigua",
-                    "province": "",
                     "country": " República Dominicana",
-                    "count": 392
+                    "province": ""
                 },
                 {
+                    "count": 655,
                     "city": "Paterson",
                     "province": " Nueva Jersey",
-                    "country": " Estados Unidos",
-                    "count": 655
+                    "country": " Estados Unidos"
                 },
                 {
+                    "count": 325,
                     "city": "Providence",
                     "province": " Rhode Island",
-                    "country": " Estados Unidos",
-                    "count": 325
+                    "country": " Estados Unidos"
                 },
                 {
+                    "count": 2385,
                     "city": "Bonao",
-                    "province": "",
                     "country": " República Dominicana",
-                    "count": 2385
+                    "province": ""
                 },
                 {
+                    "count": 1261,
                     "city": "Santa Cruz de Mao",
-                    "province": "",
                     "country": " República Dominicana",
-                    "count": 1261
+                    "province": ""
                 },
                 {
+                    "count": 645,
                     "city": "Tamayo",
-                    "province": "",
                     "country": " República Dominicana",
-                    "count": 645
+                    "province": ""
                 },
                 {
+                    "count": 586,
                     "city": "Santiago de Chile",
-                    "province": "",
                     "country": " Chile",
-                    "count": 586
+                    "province": ""
                 },
                 {
+                    "count": 1703,
                     "city": "Higüey",
-                    "province": "",
                     "country": " Dominican Republic",
-                    "count": 1703
+                    "province": ""
                 },
                 {
+                    "count": 700,
                     "city": "Cotuí",
-                    "province": "",
                     "country": " República Dominicana",
-                    "count": 700
+                    "province": ""
                 },
                 {
+                    "count": 2047,
                     "city": "Concepción de La Vega",
-                    "province": "",
                     "country": " República Dominicana",
-                    "count": 2047
+                    "province": ""
                 },
                 {
+                    "count": 338,
                     "city": "Jarabacoa",
-                    "province": "",
                     "country": " República Dominicana",
-                    "count": 338
+                    "province": ""
                 },
                 {
+                    "count": 1802,
                     "city": "Benemérita de San Cristóbal",
-                    "province": "",
                     "country": " Dominican Republic",
-                    "count": 1802
+                    "province": ""
                 },
                 {
+                    "count": 703,
                     "city": "San Juan de la Maguana",
-                    "province": "",
                     "country": " Dominican Republic",
-                    "count": 703
+                    "province": ""
                 },
                 {
+                    "count": 2735,
                     "city": "La Romana",
-                    "province": "",
                     "country": " República Dominicana",
-                    "count": 2735
+                    "province": ""
                 },
                 {
+                    "count": 531,
                     "city": "Nagua",
-                    "province": "",
                     "country": " República Dominicana",
-                    "count": 531
+                    "province": ""
                 },
                 {
+                    "count": 1101,
                     "city": "Madrid",
-                    "province": "",
                     "country": " España",
-                    "count": 1101
+                    "province": ""
                 },
                 {
+                    "count": 2030,
                     "city": "Los Alcarrizos",
-                    "province": "",
                     "country": " República Dominicana",
-                    "count": 2030
+                    "province": ""
                 },
                 {
+                    "count": 1596,
                     "city": "San Pedro de Macorís",
-                    "province": "",
                     "country": " República Dominicana",
-                    "count": 1596
+                    "province": ""
                 },
                 {
+                    "count": 399,
                     "city": "Lawrence",
                     "province": " Massachusetts",
-                    "country": " Estados Unidos",
-                    "count": 399
+                    "country": " Estados Unidos"
                 },
                 {
+                    "count": 415,
                     "city": "Barcelona",
-                    "province": "",
                     "country": " España",
-                    "count": 415
+                    "province": ""
                 },
                 {
+                    "count": 494,
                     "city": "Filadelfia",
                     "province": " Pensilvania",
-                    "country": " Estados Unidos",
-                    "count": 494
+                    "country": " Estados Unidos"
                 },
                 {
+                    "count": 1310,
                     "city": "San Felipe de Puerto Plata",
-                    "province": "",
                     "country": " República Dominicana",
-                    "count": 1310
+                    "province": ""
                 },
                 {
+                    "count": 352,
                     "city": "Constanza",
-                    "province": "",
                     "country": " República Dominicana",
-                    "count": 352
+                    "province": ""
                 },
                 {
+                    "count": 510,
                     "city": "Esperanza",
-                    "province": "",
                     "country": " República Dominicana",
-                    "count": 510
+                    "province": ""
                 },
                 {
+                    "count": 556,
                     "city": "Bogotá",
-                    "province": "",
                     "country": " Colombia",
-                    "count": 556
+                    "province": ""
                 },
                 {
+                    "count": 923,
                     "city": "Baní",
-                    "province": "",
                     "country": " República Dominicana",
-                    "count": 923
+                    "province": ""
                 },
                 {
+                    "count": 1186,
                     "city": "Azua de Compostela",
-                    "province": "",
                     "country": " República Dominicana",
-                    "count": 1186
+                    "province": ""
                 },
                 {
+                    "count": 695,
                     "city": "Ciudad de México",
-                    "province": "",
                     "country": " México",
-                    "count": 695
+                    "province": ""
                 },
                 {
+                    "count": 331,
                     "city": "Punta Cana",
-                    "province": "",
                     "country": " República Dominicana",
-                    "count": 331
+                    "province": ""
                 },
                 {
+                    "count": 5101,
                     "city": "Nueva York",
-                    "province": "",
                     "country": " Estados Unidos",
-                    "count": 5101
+                    "province": ""
                 },
                 {
+                    "count": 20021,
                     "city": "Santiago de los Caballeros",
-                    "province": "",
                     "country": " República Dominicana",
-                    "count": 20021
+                    "province": ""
                 },
                 {
+                    "count": 57640,
                     "city": "Santo Domingo",
-                    "province": "",
                     "country": " República Dominicana",
-                    "count": 57640
+                    "province": ""
                 },
                 {
+                    "count": 787,
                     "city": "Santa Cruz de Barahona",
-                    "province": "",
                     "country": " República Dominicana",
-                    "count": 787
+                    "province": ""
                 },
                 {
+                    "count": 383,
                     "city": "Boston",
                     "province": " Massachusetts",
-                    "country": " Estados Unidos",
-                    "count": 383
+                    "country": " Estados Unidos"
                 },
                 {
+                    "count": 671,
                     "city": "Boca Chica",
-                    "province": "",
                     "country": " Dominican Republic",
-                    "count": 671
+                    "province": ""
                 },
                 {
+                    "count": 882,
                     "city": "Laguna Salada",
-                    "province": "",
                     "country": " República Dominicana",
-                    "count": 882
+                    "province": ""
                 },
                 {
+                    "count": 493,
                     "city": "Bávaro",
-                    "province": "",
                     "country": " Dominican Republic",
-                    "count": 493
+                    "province": ""
                 },
                 {
+                    "count": 1354,
                     "city": "San Francisco de Macorís",
-                    "province": "",
                     "country": " República Dominicana",
-                    "count": 1354
+                    "province": ""
                 },
                 {
+                    "count": 434,
                     "city": "Sosúa",
-                    "province": "",
                     "country": " República Dominicana",
-                    "count": 434
+                    "province": ""
                 },
                 {
+                    "count": 897,
                     "city": "Villa Altagracia",
-                    "province": "",
                     "country": " República Dominicana",
-                    "count": 897
+                    "province": ""
                 },
                 {
+                    "count": 824,
                     "city": "Lima",
-                    "province": "",
                     "country": " Perú",
-                    "count": 824
+                    "province": ""
                 },
                 {
+                    "count": 1343,
                     "city": "Moca",
-                    "province": " Espaillat",
                     "country": " República Dominicana",
-                    "count": 1343
+                    "province": " Espaillat"
                 },
                 {
+                    "count": 375,
                     "city": "Vicente Noble",
-                    "province": "",
                     "country": " República Dominicana",
-                    "count": 375
-                }
-            ],
-            "Guatemala": [
-                {
-                    "city": "Palín",
-                    "province": "",
-                    "country": " Guatemala",
-                    "count": 44
-                },
-                {
-                    "city": "Puerto Barrios",
-                    "province": "",
-                    "country": " Guatemala",
-                    "count": 62
-                },
-                {
-                    "city": "Jocotán",
-                    "province": "",
-                    "country": " Guatemala",
-                    "count": 34
-                },
-                {
-                    "city": "San Juan La Laguna",
-                    "province": "",
-                    "country": " Guatemala",
-                    "count": 38
-                },
-                {
-                    "city": "Jutiapa",
-                    "province": "",
-                    "country": " Guatemala",
-                    "count": 108
-                },
-                {
-                    "city": "Coatepeque",
-                    "province": "",
-                    "country": " Guatemala",
-                    "count": 71
-                },
-                {
-                    "city": "Guatemala",
-                    "province": "",
-                    "country": " Guatemala",
-                    "count": 5833
-                },
-                {
-                    "city": "Amatitlán",
-                    "province": "",
-                    "country": " Guatemala",
-                    "count": 44
-                },
-                {
-                    "city": "Antigua Guatemala",
-                    "province": "",
-                    "country": " Guatemala",
-                    "count": 139
-                },
-                {
-                    "city": "Santiago Atitlán",
-                    "province": "",
-                    "country": " Guatemala",
-                    "count": 32
-                },
-                {
-                    "city": "Santa Cruz del Quiché",
-                    "province": "",
-                    "country": " Guatemala",
-                    "count": 161
-                },
-                {
-                    "city": "Escuintla",
-                    "province": "",
-                    "country": " Guatemala",
-                    "count": 152
-                },
-                {
-                    "city": "San Juan Chamelco",
-                    "province": "",
-                    "country": " Guatemala",
-                    "count": 39
-                },
-                {
-                    "city": "San Juan Comalapa",
-                    "province": "",
-                    "country": " Guatemala",
-                    "count": 54
-                },
-                {
-                    "city": "Chiquimula",
-                    "province": "",
-                    "country": " Guatemala",
-                    "count": 212
-                },
-                {
-                    "city": "Poptún",
-                    "province": "",
-                    "country": " Guatemala",
-                    "count": 38
-                },
-                {
-                    "city": "Jalapa",
-                    "province": "",
-                    "country": " Guatemala",
-                    "count": 70
-                },
-                {
-                    "city": "Panajachel",
-                    "province": "",
-                    "country": " Guatemala",
-                    "count": 77
-                },
-                {
-                    "city": "Rabinal",
-                    "province": "",
-                    "country": " Guatemala",
-                    "count": 33
-                },
-                {
-                    "city": "Zacapa",
-                    "province": "",
-                    "country": " Guatemala",
-                    "count": 70
-                },
-                {
-                    "city": "Los Ángeles",
-                    "province": " California",
-                    "country": " Estados Unidos",
-                    "count": 40
-                },
-                {
-                    "city": "Tactic",
-                    "province": "",
-                    "country": " Guatemala",
-                    "count": 35
-                },
-                {
-                    "city": "Chisec",
-                    "province": "",
-                    "country": " Guatemala",
-                    "count": 35
-                },
-                {
-                    "city": "Totonicapán",
-                    "province": "",
-                    "country": " Guatemala",
-                    "count": 173
-                },
-                {
-                    "city": "Chichicastenango",
-                    "province": "",
-                    "country": " Guatemala",
-                    "count": 76
-                },
-                {
-                    "city": "Mazatenango",
-                    "province": "",
-                    "country": " Guatemala",
-                    "count": 122
-                },
-                {
-                    "city": "Mixco",
-                    "province": "",
-                    "country": " Guatemala",
-                    "count": 437
-                },
-                {
-                    "city": "Nebaj",
-                    "province": "",
-                    "country": " Guatemala",
-                    "count": 50
-                },
-                {
-                    "city": "Ciudad de México",
-                    "province": "",
-                    "country": " México",
-                    "count": 63
-                },
-                {
-                    "city": "San Benito",
-                    "province": "",
-                    "country": " Guatemala",
-                    "count": 98
-                },
-                {
-                    "city": "Nueva York",
-                    "province": "",
-                    "country": " Estados Unidos",
-                    "count": 56
-                },
-                {
-                    "city": "Sololá",
-                    "province": "",
-                    "country": " Guatemala",
-                    "count": 72
-                },
-                {
-                    "city": "Villa Nueva",
-                    "province": "",
-                    "country": " Guatemala",
-                    "count": 236
-                },
-                {
-                    "city": "Cobán",
-                    "province": "",
-                    "country": " Guatemala",
-                    "count": 448
-                },
-                {
-                    "city": "Salamá",
-                    "province": "",
-                    "country": " Guatemala",
-                    "count": 54
-                },
-                {
-                    "city": "San Marcos",
-                    "province": "",
-                    "country": " Guatemala",
-                    "count": 509
-                },
-                {
-                    "city": "Chimaltenango",
-                    "province": "",
-                    "country": " Guatemala",
-                    "count": 156
-                },
-                {
-                    "city": "Quetzaltenango",
-                    "province": "",
-                    "country": " Guatemala",
-                    "count": 837
-                },
-                {
-                    "city": "Tecpán",
-                    "province": "",
-                    "country": " Guatemala",
-                    "count": 127
-                },
-                {
-                    "city": "San Pedro Carchá",
-                    "province": "",
-                    "country": " Guatemala",
-                    "count": 58
-                },
-                {
-                    "city": "Patzún",
-                    "province": "",
-                    "country": " Guatemala",
-                    "count": 65
-                },
-                {
-                    "city": "Huehuetenango",
-                    "province": "",
-                    "country": " Guatemala",
-                    "count": 322
-                },
-                {
-                    "city": "Lima",
-                    "province": "",
-                    "country": " Perú",
-                    "count": 40
-                },
-                {
-                    "city": "Izabal",
-                    "province": "",
-                    "country": " Guatemala",
-                    "count": 260
-                },
-                {
-                    "city": "Retalhuleu",
-                    "province": "",
-                    "country": " Guatemala",
-                    "count": 69
+                    "province": ""
                 }
             ],
             "Peru": [
                 {
+                    "count": 176,
                     "city": "Paucarpata",
-                    "province": "",
                     "country": " Peru",
-                    "count": 176
+                    "province": ""
                 },
                 {
+                    "count": 235,
                     "city": "Majes",
-                    "province": "",
                     "country": " Peru",
-                    "count": 235
+                    "province": ""
                 },
                 {
+                    "count": 17591,
                     "city": "Lima",
-                    "province": "",
                     "country": " Peru",
-                    "count": 17591
+                    "province": ""
                 },
                 {
+                    "count": 197,
                     "city": "Ilave",
-                    "province": "",
                     "country": " Peru",
-                    "count": 197
+                    "province": ""
                 },
                 {
+                    "count": 1381,
                     "city": "Chiclayo",
-                    "province": "",
                     "country": " Peru",
-                    "count": 1381
+                    "province": ""
                 },
                 {
+                    "count": 224,
                     "city": "Pisco",
-                    "province": "",
                     "country": " Peru",
-                    "count": 224
+                    "province": ""
                 },
                 {
+                    "count": 258,
                     "city": "El Tambo",
-                    "province": "",
                     "country": " Peru",
-                    "count": 258
+                    "province": ""
                 },
                 {
+                    "count": 259,
                     "city": "Andahuaylas",
-                    "province": "",
                     "country": " Peru",
-                    "count": 259
+                    "province": ""
                 },
                 {
+                    "count": 996,
                     "city": "Ayacucho",
-                    "province": "",
                     "country": " Peru",
-                    "count": 996
+                    "province": ""
                 },
                 {
+                    "count": 216,
                     "city": "Chincha Alta",
-                    "province": "",
                     "country": " Peru",
-                    "count": 216
+                    "province": ""
                 },
                 {
+                    "count": 2141,
                     "city": "Juliaca",
-                    "province": "",
                     "country": " Peru",
-                    "count": 2141
+                    "province": ""
                 },
                 {
+                    "count": 295,
                     "city": "Ilo",
-                    "province": "",
                     "country": " Peru",
-                    "count": 295
+                    "province": ""
                 },
                 {
+                    "count": 216,
                     "city": "Moyobamba",
-                    "province": "",
                     "country": " Peru",
-                    "count": 216
+                    "province": ""
                 },
                 {
+                    "count": 294,
                     "city": "Jaén",
-                    "province": "",
                     "country": " Peru",
-                    "count": 294
+                    "province": ""
                 },
                 {
+                    "count": 201,
                     "city": "Paita",
-                    "province": "",
                     "country": " Peru",
-                    "count": 201
+                    "province": ""
                 },
                 {
+                    "count": 462,
                     "city": "Sullana",
-                    "province": "",
                     "country": " Peru",
-                    "count": 462
+                    "province": ""
                 },
                 {
+                    "count": 249,
                     "city": "Castilla",
-                    "province": "",
                     "country": " Peru",
-                    "count": 249
+                    "province": ""
                 },
                 {
+                    "count": 289,
                     "city": "Cerro Colorado",
-                    "province": "",
                     "country": " Peru",
-                    "count": 289
+                    "province": ""
                 },
                 {
+                    "count": 538,
                     "city": "Tarapoto",
-                    "province": "",
                     "country": " Peru",
-                    "count": 538
+                    "province": ""
                 },
                 {
+                    "count": 733,
                     "city": "Huánuco",
-                    "province": "",
                     "country": " Peru",
-                    "count": 733
+                    "province": ""
                 },
                 {
+                    "count": 1691,
                     "city": "Cusco",
-                    "province": "",
                     "country": " Peru",
-                    "count": 1691
+                    "province": ""
                 },
                 {
+                    "count": 806,
                     "city": "Chimbote",
-                    "province": "",
                     "country": " Peru",
-                    "count": 806
+                    "province": ""
                 },
                 {
+                    "count": 642,
                     "city": "Callao",
-                    "province": "",
                     "country": " Peru",
-                    "count": 642
+                    "province": ""
                 },
                 {
+                    "count": 2134,
                     "city": "Arequipa",
-                    "province": "",
                     "country": " Peru",
-                    "count": 2134
+                    "province": ""
                 },
                 {
+                    "count": 208,
                     "city": "Talara",
-                    "province": "",
                     "country": " Peru",
-                    "count": 208
+                    "province": ""
                 },
                 {
+                    "count": 1074,
                     "city": "Ica",
-                    "province": "",
                     "country": " Peru",
-                    "count": 1074
+                    "province": ""
                 },
                 {
+                    "count": 867,
                     "city": "Pucallpa",
-                    "province": "",
                     "country": " Peru",
-                    "count": 867
+                    "province": ""
                 },
                 {
+                    "count": 1249,
                     "city": "Tacna",
-                    "province": "",
                     "country": " Peru",
-                    "count": 1249
+                    "province": ""
                 },
                 {
+                    "count": 186,
                     "city": "Barranca",
-                    "province": "",
                     "country": " Peru",
-                    "count": 186
+                    "province": ""
                 },
                 {
+                    "count": 315,
                     "city": "Leoncio Prado",
-                    "province": "",
                     "country": " Peru",
-                    "count": 315
+                    "province": ""
                 },
                 {
+                    "count": 192,
                     "city": "Yurimaguas",
-                    "province": "",
                     "country": " Peru",
-                    "count": 192
+                    "province": ""
                 },
                 {
+                    "count": 963,
                     "city": "Piura",
-                    "province": "",
                     "country": " Peru",
-                    "count": 963
+                    "province": ""
                 },
                 {
+                    "count": 269,
                     "city": "Abancay",
-                    "province": "",
                     "country": " Peru",
-                    "count": 269
+                    "province": ""
                 },
                 {
+                    "count": 186,
                     "city": "Huaral",
-                    "province": "",
                     "country": " Peru",
-                    "count": 186
+                    "province": ""
                 },
                 {
+                    "count": 436,
                     "city": "Ventanilla",
-                    "province": "",
                     "country": " Peru",
-                    "count": 436
+                    "province": ""
                 },
                 {
+                    "count": 245,
                     "city": "Huacho",
-                    "province": "",
                     "country": " Peru",
-                    "count": 245
+                    "province": ""
                 },
                 {
+                    "count": 279,
                     "city": "Puerto Maldonado",
-                    "province": "",
                     "country": " Peru",
-                    "count": 279
+                    "province": ""
                 },
                 {
+                    "count": 501,
                     "city": "Cajamarca",
-                    "province": "",
                     "country": " Peru",
-                    "count": 501
+                    "province": ""
                 },
                 {
+                    "count": 1088,
                     "city": "Huancayo",
-                    "province": "",
                     "country": " Peru",
-                    "count": 1088
+                    "province": ""
                 },
                 {
+                    "count": 307,
                     "city": "Huaraz",
-                    "province": "",
                     "country": " Peru",
-                    "count": 307
+                    "province": ""
                 },
                 {
+                    "count": 1095,
                     "city": "Iquitos",
-                    "province": "",
                     "country": " Peru",
-                    "count": 1095
+                    "province": ""
                 },
                 {
+                    "count": 1728,
                     "city": "Trujillo",
-                    "province": "",
                     "country": " Peru",
-                    "count": 1728
+                    "province": ""
                 },
                 {
+                    "count": 261,
                     "city": "Tumbes",
-                    "province": "",
                     "country": " Peru",
-                    "count": 261
+                    "province": ""
                 },
                 {
+                    "count": 357,
                     "city": "Moquegua",
-                    "province": "",
                     "country": " Peru",
-                    "count": 357
+                    "province": ""
                 },
                 {
+                    "count": 905,
                     "city": "Puno",
-                    "province": "",
                     "country": " Peru",
-                    "count": 905
+                    "province": ""
                 }
             ],
             "México": [
                 {
+                    "count": 996,
                     "city": "León",
-                    "province": "",
                     "country": " México",
-                    "count": 996
+                    "province": ""
                 },
                 {
+                    "count": 834,
                     "city": "Veracruz",
                     "province": " Veracruz de Ignacio de la Llave",
-                    "country": " México",
-                    "count": 834
+                    "country": " México"
                 },
                 {
+                    "count": 2754,
                     "city": "Ciudad Victoria",
-                    "province": "",
                     "country": " México",
-                    "count": 2754
+                    "province": ""
                 },
                 {
+                    "count": 815,
                     "city": "Chihuahua",
-                    "province": "",
                     "country": " México",
-                    "count": 815
+                    "province": ""
                 },
                 {
+                    "count": 1494,
                     "city": "Ciudad Juárez",
-                    "province": "",
                     "country": " México",
-                    "count": 1494
+                    "province": ""
                 },
                 {
+                    "count": 1480,
                     "city": "Pesquería",
                     "province": " Nuevo León",
-                    "country": " Mexico",
-                    "count": 1480
+                    "country": " Mexico"
                 },
                 {
+                    "count": 4198,
                     "city": "Santa Catarina",
                     "province": " Nuevo León",
-                    "country": " México",
-                    "count": 4198
+                    "country": " México"
                 },
                 {
+                    "count": 4522,
                     "city": "Juárez",
                     "province": " Nuevo León",
-                    "country": " Mexico",
-                    "count": 4522
+                    "country": " Mexico"
                 },
                 {
+                    "count": 7472,
                     "city": "General Escobedo",
                     "province": " Nuevo León",
-                    "country": " Mexico",
-                    "count": 7472
+                    "country": " Mexico"
                 },
                 {
+                    "count": 7637,
                     "city": "San Nicolás de los Garza",
                     "province": " Nuevo León",
-                    "country": " México",
-                    "count": 7637
+                    "country": " México"
                 },
                 {
+                    "count": 1798,
                     "city": "Heroica Matamoros",
-                    "province": "",
                     "country": " México",
-                    "count": 1798
+                    "province": ""
                 },
                 {
+                    "count": 1804,
                     "city": "San Pedro Garza García",
                     "province": " Nuevo León",
-                    "country": " México",
-                    "count": 1804
+                    "country": " México"
                 },
                 {
+                    "count": 645,
                     "city": "Zapopan",
-                    "province": " Jalisco",
                     "country": " México",
-                    "count": 645
+                    "province": " Jalisco"
                 },
                 {
+                    "count": 1108,
                     "city": "Mérida",
-                    "province": "",
                     "country": " México",
-                    "count": 1108
+                    "province": ""
                 },
                 {
+                    "count": 1489,
                     "city": "Nuevo Laredo",
-                    "province": "",
                     "country": " México",
-                    "count": 1489
+                    "province": ""
                 },
                 {
+                    "count": 11985,
                     "city": "Guadalupe",
                     "province": " Nuevo León",
-                    "country": " México",
-                    "count": 11985
+                    "country": " México"
                 },
                 {
+                    "count": 731,
                     "city": "Culiacán",
                     "province": " Sinaloa",
-                    "country": " México",
-                    "count": 731
+                    "country": " México"
                 },
                 {
+                    "count": 956,
                     "city": "Ecatepec de Morelos",
-                    "province": " Estado de México",
                     "country": " México",
-                    "count": 956
+                    "province": " Estado de México"
                 },
                 {
+                    "count": 2666,
                     "city": "Saltillo",
-                    "province": "",
                     "country": " México",
-                    "count": 2666
+                    "province": ""
                 },
                 {
+                    "count": 28314,
                     "city": "Monterrey",
                     "province": " Nuevo León",
-                    "country": " México",
-                    "count": 28314
+                    "country": " México"
                 },
                 {
+                    "count": 646,
                     "city": "Toluca de Lerdo",
-                    "province": " Estado de México",
                     "country": " México",
-                    "count": 646
+                    "province": " Estado de México"
                 },
                 {
+                    "count": 821,
                     "city": "Linares",
                     "province": " Nuevo León",
-                    "country": " México",
-                    "count": 821
+                    "country": " México"
                 },
                 {
+                    "count": 1220,
                     "city": "Tampico",
-                    "province": "",
                     "country": " México",
-                    "count": 1220
+                    "province": ""
                 },
                 {
+                    "count": 1223,
                     "city": "Guadalajara",
-                    "province": " Jalisco",
                     "country": " México",
-                    "count": 1223
+                    "province": " Jalisco"
                 },
                 {
+                    "count": 12252,
                     "city": "Apodaca",
                     "province": " Nuevo León",
-                    "country": " México",
-                    "count": 12252
+                    "country": " México"
                 },
                 {
+                    "count": 847,
                     "city": "Hermosillo",
                     "province": " Sonora",
-                    "country": " México",
-                    "count": 847
+                    "country": " México"
                 },
                 {
+                    "count": 2481,
                     "city": "General Zuazua",
                     "province": " Nuevo León",
-                    "country": " México",
-                    "count": 2481
+                    "country": " México"
                 },
                 {
+                    "count": 8302,
                     "city": "Ciudad de México",
-                    "province": "",
                     "country": " México",
-                    "count": 8302
+                    "province": ""
                 },
                 {
+                    "count": 810,
                     "city": "Oaxaca de Juárez",
-                    "province": "",
                     "country": " México",
-                    "count": 810
+                    "province": ""
                 },
                 {
+                    "count": 811,
                     "city": "Santiago",
                     "province": " Nuevo León",
-                    "country": " México",
-                    "count": 811
+                    "country": " México"
                 },
                 {
+                    "count": 1774,
                     "city": "Salinas Victoria",
                     "province": " Nuevo León",
-                    "country": " México",
-                    "count": 1774
+                    "country": " México"
                 },
                 {
+                    "count": 2240,
                     "city": "Reynosa",
-                    "province": "",
                     "country": " México",
-                    "count": 2240
+                    "province": ""
                 },
                 {
+                    "count": 1337,
                     "city": "San Luis Potosí",
-                    "province": "",
                     "country": " México",
-                    "count": 1337
+                    "province": ""
                 },
                 {
+                    "count": 1433,
                     "city": "Torreón",
-                    "province": "",
                     "country": " México",
-                    "count": 1433
+                    "province": ""
                 },
                 {
+                    "count": 1312,
                     "city": "Puebla de Zaragoza",
-                    "province": "",
                     "country": " México",
-                    "count": 1312
+                    "province": ""
                 },
                 {
+                    "count": 854,
                     "city": "Mexicali",
                     "province": " Península de Baja California",
-                    "country": " México",
-                    "count": 854
+                    "country": " México"
                 },
                 {
+                    "count": 1306,
                     "city": "Ciénega de Flores",
                     "province": " Nuevo León",
-                    "country": " México",
-                    "count": 1306
+                    "country": " México"
                 },
                 {
+                    "count": 854,
                     "city": "Cancún",
-                    "province": "",
                     "country": " México",
-                    "count": 854
+                    "province": ""
                 },
                 {
+                    "count": 1497,
                     "city": "Cadereyta Jiménez",
                     "province": " Nuevo León",
-                    "country": " México",
-                    "count": 1497
+                    "country": " México"
                 },
                 {
+                    "count": 741,
                     "city": "Monclova",
-                    "province": "",
                     "country": " México",
-                    "count": 741
+                    "province": ""
                 },
                 {
+                    "count": 5225,
                     "city": "García",
                     "province": " Nuevo León",
-                    "country": " México",
-                    "count": 5225
+                    "country": " México"
                 },
                 {
+                    "count": 662,
                     "city": "Aguascalientes",
-                    "province": "",
                     "country": " México",
-                    "count": 662
+                    "province": ""
                 },
                 {
+                    "count": 798,
                     "city": "Querétaro",
-                    "province": "",
                     "country": " México",
-                    "count": 798
+                    "province": ""
                 },
                 {
+                    "count": 1690,
                     "city": "Tijuana",
                     "province": " Península de Baja California",
-                    "country": " México",
-                    "count": 1690
+                    "country": " México"
                 },
                 {
+                    "count": 728,
                     "city": "Villahermosa",
-                    "province": "",
                     "country": " México",
-                    "count": 728
+                    "province": ""
                 }
-            ]
-        },
-        "Instagram": {
-            "General": [
+            ],
+            "Guatemala": [
                 {
-                    "city": "Gobernador Ingeniero Valentín Virasoro",
-                    "province": "Gobernador Ingeniero Valentín Virasoro, Corrientes",
-                    "count": 106
+                    "count": 44,
+                    "city": "Palín",
+                    "country": " Guatemala",
+                    "province": ""
                 },
                 {
-                    "city": "Sauce",
-                    "province": "Corrientes",
-                    "count": 37
-                },
-                {
-                    "city": "San Luis del Palmar",
-                    "province": "San Luis del Palmar, Corrientes",
-                    "count": 157
-                },
-                {
-                    "city": "Esquina",
-                    "province": "Corrientes",
-                    "count": 138
-                },
-                {
-                    "city": "Itá Ibaté",
-                    "province": "Itá Ibaté, Corrientes",
-                    "count": 39
-                },
-                {
-                    "city": "La Cruz",
-                    "province": "La Cruz, Corrientes",
-                    "count": 38
-                },
-                {
-                    "city": "Formosa",
-                    "province": "Formosa",
-                    "count": 114
-                },
-                {
-                    "city": "Santa Lucía",
-                    "province": "Santa Lucía, Corrientes",
-                    "count": 68
-                },
-                {
-                    "city": "Buenos Aires",
-                    "province": "Buenos Aires, Ciudad Autónoma de Buenos Aires",
-                    "count": 553
-                },
-                {
-                    "city": "Taoyüan",
-                    "province": "Taoyüan, Taoyuan City",
-                    "count": 58
-                },
-                {
-                    "city": "Lavalle",
-                    "province": "Corrientes",
-                    "count": 49
-                },
-                {
-                    "city": "Taipei",
-                    "province": "Taipei",
-                    "count": 65
-                },
-                {
-                    "city": "Riachuelo",
-                    "province": "Corrientes",
-                    "count": 165
-                },
-                {
-                    "city": "Córdoba",
-                    "province": "Córdoba, Córdoba",
-                    "count": 220
-                },
-                {
-                    "city": "Goya",
-                    "province": "Corrientes",
-                    "count": 390
-                },
-                {
-                    "city": "Ho Chi Minh City",
-                    "province": "Ho Chi Minh City, Ho Chi Minh City",
-                    "count": 38
-                },
-                {
-                    "city": "Monte Caseros",
-                    "province": "Monte Caseros, Corrientes",
-                    "count": 91
-                },
-                {
-                    "city": "Laguna Brava",
-                    "province": "Laguna Brava, Corrientes",
-                    "count": 108
-                },
-                {
-                    "city": "Mburucuyá",
-                    "province": "Mburucuyá, Corrientes",
-                    "count": 69
-                },
-                {
-                    "city": "Xinbei",
-                    "province": "New Taipei City",
-                    "count": 304
-                },
-                {
-                    "city": "Mocoretá",
-                    "province": "Mocoretá, Corrientes",
-                    "count": 28
-                },
-                {
-                    "city": "Saladas",
-                    "province": "Corrientes",
-                    "count": 134
-                },
-                {
-                    "city": "Barranqueras",
-                    "province": "Chaco",
-                    "count": 45
-                },
-                {
-                    "city": "Alvear",
-                    "province": "Corrientes",
-                    "count": 30
-                },
-                {
-                    "city": "Presidencia Roque Sáenz Peña",
-                    "province": "Presidencia Roque Sáenz Peña, Chaco",
-                    "count": 65
-                },
-                {
-                    "city": "Santa Rosa",
-                    "province": "Santa Rosa, Corrientes",
-                    "count": 44
-                },
-                {
-                    "city": "Curuzú Cuatiá",
-                    "province": "Curuzú Cuatiá, Corrientes",
-                    "count": 122
-                },
-                {
-                    "city": "Caa Catí",
-                    "province": "Caa Catí, Corrientes",
-                    "count": 36
-                },
-                {
-                    "city": "Corrientes",
-                    "province": "Corrientes",
-                    "count": 15091
-                },
-                {
-                    "city": "San Miguel",
-                    "province": "San Miguel, Corrientes",
-                    "count": 45
-                },
-                {
-                    "city": "San Roque",
-                    "province": "San Roque, Corrientes",
-                    "count": 58
-                },
-                {
-                    "city": "Bella Vista",
-                    "province": "Bella Vista, Corrientes",
-                    "count": 304
-                },
-                {
-                    "city": "Salta",
-                    "province": "Salta",
-                    "count": 30
-                },
-                {
-                    "city": "San Cosme",
-                    "province": "San Cosme, Corrientes",
-                    "count": 155
-                },
-                {
-                    "city": "Ituzaingó",
-                    "province": "Ituzaingó, Corrientes",
-                    "count": 145
-                },
-                {
-                    "city": "Paso de los Libres",
-                    "province": "Paso de los Libres, Corrientes",
-                    "count": 214
-                },
-                {
-                    "city": "Santo Tomé",
-                    "province": "Santo Tomé, Corrientes",
-                    "count": 135
-                },
-                {
-                    "city": "Empedrado",
-                    "province": "Corrientes",
-                    "count": 90
-                },
-                {
-                    "city": "Itatí",
-                    "province": "Itatí, Corrientes",
-                    "count": 72
-                },
-                {
-                    "city": "Rosario",
-                    "province": "Santa Fe",
-                    "count": 61
-                },
-                {
-                    "city": "Paso de la Patria",
-                    "province": "Paso de la Patria, Corrientes",
-                    "count": 62
-                },
-                {
-                    "city": "Posadas",
-                    "province": "Misiones",
-                    "count": 163
-                },
-                {
-                    "city": "Concepción",
-                    "province": "Concepción, Corrientes",
-                    "count": 28
-                },
-                {
-                    "city": "Mercedes",
-                    "province": "Corrientes",
-                    "count": 201
-                },
-                {
-                    "city": "Resistencia",
-                    "province": "Chaco",
-                    "count": 548
-                },
-                {
-                    "city": "Caracas",
-                    "province": "Capital District",
-                    "count": 4
-                },
-                {
-                    "city": "São Paulo",
-                    "province": "São Paulo, São Paulo (state)",
-                    "count": 5
-                },
-                {
-                    "city": "Izabal",
-                    "province": "Izabal Department",
-                    "count": 30
-                },
-                {
-                    "city": "San Marcos",
-                    "province": "San Marcos, San Marcos Department",
-                    "count": 21
-                },
-                {
-                    "city": "Salcajá",
-                    "province": "Salcajá, Totonicapán Department",
-                    "count": 4
-                },
-                {
-                    "city": "Aguacatán",
-                    "province": "Aguacatán, Huehuetenango Department",
-                    "count": 5
-                },
-                {
-                    "city": "Quito",
-                    "province": "Pichincha Province",
-                    "count": 6
-                },
-                {
-                    "city": "Rio de Janeiro",
-                    "province": "Rio de Janeiro, Rio de Janeiro (state)",
-                    "count": 8
-                },
-                {
-                    "city": "Huehuetenango",
-                    "province": "Huehuetenango Department",
-                    "count": 12
-                },
-                {
-                    "city": "San Cristóbal",
-                    "province": "San Cristóbal, Totonicapán Department",
-                    "count": 3
-                },
-                {
-                    "city": "Sanaa",
-                    "province": "Sana'a Governorate",
-                    "count": 3
-                },
-                {
-                    "city": "Montevideo",
-                    "province": "Montevideo Department",
-                    "count": 7
-                },
-                {
-                    "city": "San Salvador",
-                    "province": "San Salvador, San Salvador Department",
-                    "count": 12
-                },
-                {
-                    "city": "Santo Domingo",
-                    "province": "Santo Domingo, Distrito Nacional",
-                    "count": 7
-                },
-                {
-                    "city": "Mazatenango",
-                    "province": "Suchitepéquez Department",
-                    "count": 6
-                },
-                {
-                    "city": "Bogotá",
-                    "province": "Bogotá, Distrito Especial",
-                    "count": 15
-                },
-                {
-                    "city": "Buenos Aires",
-                    "province": "Buenos Aires, Ciudad Autónoma de Buenos Aires",
-                    "count": 5
-                },
-                {
-                    "city": "Totonicapán",
-                    "province": "Totonicapán, Totonicapán Department",
-                    "count": 5
-                },
-                {
-                    "city": "Cuilco",
-                    "province": "Huehuetenango Department",
-                    "count": 8
-                },
-                {
-                    "city": "Mixco",
-                    "province": "Guatemala Department",
-                    "count": 15
-                },
-                {
-                    "city": "Cobán",
-                    "province": "Cobán, Alta Verapaz Department",
-                    "count": 23
-                },
-                {
-                    "city": "Brasília",
-                    "province": "Brasília, Federal District",
-                    "count": 6
-                },
-                {
-                    "city": "Santa Cruz del Quiché",
-                    "province": "Santa Cruz del Quiché, Quiché Department",
-                    "count": 6
-                },
-                {
-                    "city": "Baku",
-                    "province": "Baku",
-                    "count": 4
-                },
-                {
-                    "city": "Panama City",
-                    "province": "Panama City, Panamá Province",
-                    "count": 22
-                },
-                {
-                    "city": "La Paz",
-                    "province": "La Paz, La Paz Department",
-                    "count": 5
-                },
-                {
-                    "city": "Zacapa",
-                    "province": "Zacapa Department",
-                    "count": 4
-                },
-                {
-                    "city": "Managua",
-                    "province": "Managua Department",
-                    "count": 5
-                },
-                {
-                    "city": "Villa Nueva",
-                    "province": "Villa Nueva, Guatemala Department",
-                    "count": 15
-                },
-                {
-                    "city": "Escuintla",
-                    "province": "Escuintla Department",
-                    "count": 4
-                },
-                {
-                    "city": "Quetzaltenango",
-                    "province": "Quetzaltenango Department",
-                    "count": 63
-                },
-                {
-                    "city": "Chimaltenango",
-                    "province": "Chimaltenango Department",
-                    "count": 5
-                },
-                {
-                    "city": "Amman",
-                    "province": "Amman Governorate",
-                    "count": 5
-                },
-                {
-                    "city": "Lima",
-                    "province": "Lima Region",
-                    "count": 7
-                },
-                {
-                    "city": "San José",
-                    "province": "San José, San José Province",
-                    "count": 4
-                },
-                {
-                    "city": "Mexico City",
-                    "province": "Mexico City, Distrito Federal",
-                    "count": 23
-                },
-                {
-                    "city": "Baghdad",
-                    "province": "Baghdad Governorate",
-                    "count": 4
-                },
-                {
-                    "city": "Tegucigalpa",
-                    "province": "Francisco Morazán Department",
-                    "count": 5
-                },
-                {
-                    "city": "Tactic",
-                    "province": "Alta Verapaz Department",
-                    "count": 5
-                },
-                {
-                    "city": "Cairo",
-                    "province": "Cairo Governorate",
-                    "count": 6
-                },
-                {
-                    "city": "Guatemala City",
-                    "province": "Guatemala City, Guatemala Department",
-                    "count": 1089
-                },
-                {
-                    "city": "Atescatempa",
-                    "province": "Jutiapa Department",
-                    "count": 4
-                },
-                {
-                    "city": "Chiquimula",
-                    "province": "Chiquimula Department",
-                    "count": 6
-                },
-                {
+                    "count": 62,
                     "city": "Puerto Barrios",
-                    "province": "Puerto Barrios, Izabal Department",
-                    "count": 5
+                    "country": " Guatemala",
+                    "province": ""
                 },
                 {
+                    "count": 34,
+                    "city": "Jocotán",
+                    "country": " Guatemala",
+                    "province": ""
+                },
+                {
+                    "count": 38,
+                    "city": "San Juan La Laguna",
+                    "country": " Guatemala",
+                    "province": ""
+                },
+                {
+                    "count": 108,
+                    "city": "Jutiapa",
+                    "country": " Guatemala",
+                    "province": ""
+                },
+                {
+                    "count": 71,
+                    "city": "Coatepeque",
+                    "country": " Guatemala",
+                    "province": ""
+                },
+                {
+                    "count": 5833,
+                    "city": "Guatemala",
+                    "country": " Guatemala",
+                    "province": ""
+                },
+                {
+                    "count": 44,
+                    "city": "Amatitlán",
+                    "country": " Guatemala",
+                    "province": ""
+                },
+                {
+                    "count": 139,
+                    "city": "Antigua Guatemala",
+                    "country": " Guatemala",
+                    "province": ""
+                },
+                {
+                    "count": 32,
+                    "city": "Santiago Atitlán",
+                    "country": " Guatemala",
+                    "province": ""
+                },
+                {
+                    "count": 161,
+                    "city": "Santa Cruz del Quiché",
+                    "country": " Guatemala",
+                    "province": ""
+                },
+                {
+                    "count": 152,
+                    "city": "Escuintla",
+                    "country": " Guatemala",
+                    "province": ""
+                },
+                {
+                    "count": 39,
+                    "city": "San Juan Chamelco",
+                    "country": " Guatemala",
+                    "province": ""
+                },
+                {
+                    "count": 54,
+                    "city": "San Juan Comalapa",
+                    "country": " Guatemala",
+                    "province": ""
+                },
+                {
+                    "count": 212,
+                    "city": "Chiquimula",
+                    "country": " Guatemala",
+                    "province": ""
+                },
+                {
+                    "count": 38,
+                    "city": "Poptún",
+                    "country": " Guatemala",
+                    "province": ""
+                },
+                {
+                    "count": 70,
+                    "city": "Jalapa",
+                    "country": " Guatemala",
+                    "province": ""
+                },
+                {
+                    "count": 77,
                     "city": "Panajachel",
-                    "province": "Sololá Department",
-                    "count": 5
+                    "country": " Guatemala",
+                    "province": ""
                 },
                 {
-                    "city": "Dhaka",
-                    "province": "Dhaka Division",
-                    "count": 38
+                    "count": 33,
+                    "city": "Rabinal",
+                    "country": " Guatemala",
+                    "province": ""
                 },
                 {
-                    "city": "Bishkek",
-                    "province": "Bishkek",
-                    "count": 27
+                    "count": 70,
+                    "city": "Zacapa",
+                    "country": " Guatemala",
+                    "province": ""
                 },
                 {
-                    "city": "Guayaquil",
-                    "province": "Guayas Province",
-                    "count": 9306
+                    "count": 40,
+                    "city": "Los Ángeles",
+                    "country": " Estados Unidos",
+                    "province": " California"
                 },
                 {
-                    "city": "Riobamba",
-                    "province": "Chimborazo Province",
-                    "count": 185
+                    "count": 35,
+                    "city": "Tactic",
+                    "country": " Guatemala",
+                    "province": ""
                 },
                 {
-                    "city": "Quevedo",
-                    "province": "Los Ríos Province",
-                    "count": 84
+                    "count": 35,
+                    "city": "Chisec",
+                    "country": " Guatemala",
+                    "province": ""
                 },
                 {
-                    "city": "Quito",
-                    "province": "Pichincha Province",
-                    "count": 3594
+                    "count": 173,
+                    "city": "Totonicapán",
+                    "country": " Guatemala",
+                    "province": ""
                 },
                 {
-                    "city": "Hong Kong",
-                    "province": "Hong Kong, Hong Kong",
-                    "count": 45
+                    "count": 76,
+                    "city": "Chichicastenango",
+                    "country": " Guatemala",
+                    "province": ""
                 },
                 {
-                    "city": "Chone",
-                    "province": "Manabí Province",
-                    "count": 31
+                    "count": 122,
+                    "city": "Mazatenango",
+                    "country": " Guatemala",
+                    "province": ""
                 },
                 {
-                    "city": "Conocoto",
-                    "province": "Pichincha Province",
-                    "count": 155
+                    "count": 437,
+                    "city": "Mixco",
+                    "country": " Guatemala",
+                    "province": ""
                 },
                 {
-                    "city": "Calderón",
-                    "province": "Calderón, Pichincha Province",
-                    "count": 289
+                    "count": 50,
+                    "city": "Nebaj",
+                    "country": " Guatemala",
+                    "province": ""
                 },
                 {
-                    "city": "Bogotá",
-                    "province": "Bogotá, Distrito Especial",
-                    "count": 55
+                    "count": 63,
+                    "city": "Ciudad de México",
+                    "country": " México",
+                    "province": ""
                 },
                 {
-                    "city": "Buenos Aires",
-                    "province": "Buenos Aires, Ciudad Autónoma de Buenos Aires",
-                    "count": 29
+                    "count": 98,
+                    "city": "San Benito",
+                    "country": " Guatemala",
+                    "province": ""
                 },
                 {
-                    "city": "Alangasí",
-                    "province": "Alangasí, Pichincha Province",
-                    "count": 34
+                    "count": 56,
+                    "city": "Nueva York",
+                    "country": " Estados Unidos",
+                    "province": ""
                 },
                 {
-                    "city": "Babahoyo",
-                    "province": "Los Ríos Province",
-                    "count": 48
+                    "count": 72,
+                    "city": "Sololá",
+                    "country": " Guatemala",
+                    "province": ""
                 },
                 {
-                    "city": "Loja",
-                    "province": "Loja Province",
-                    "count": 196
+                    "count": 236,
+                    "city": "Villa Nueva",
+                    "country": " Guatemala",
+                    "province": ""
                 },
                 {
-                    "city": "Daule",
-                    "province": "Guayas Province",
-                    "count": 357
+                    "count": 448,
+                    "city": "Cobán",
+                    "country": " Guatemala",
+                    "province": ""
                 },
                 {
-                    "city": "Esmeraldas",
-                    "province": "Esmeraldas Province",
-                    "count": 29
+                    "count": 54,
+                    "city": "Salamá",
+                    "country": " Guatemala",
+                    "province": ""
                 },
                 {
-                    "city": "Guaranda",
-                    "province": "Bolívar Province",
-                    "count": 29
+                    "count": 509,
+                    "city": "San Marcos",
+                    "country": " Guatemala",
+                    "province": ""
                 },
                 {
-                    "city": "Ho Chi Minh City",
-                    "province": "Ho Chi Minh City, Ho Chi Minh City",
-                    "count": 30
+                    "count": 156,
+                    "city": "Chimaltenango",
+                    "country": " Guatemala",
+                    "province": ""
                 },
                 {
-                    "city": "Tumbaco",
-                    "province": "Pichincha Province",
-                    "count": 124
+                    "count": 837,
+                    "city": "Quetzaltenango",
+                    "country": " Guatemala",
+                    "province": ""
                 },
                 {
-                    "city": "Ibarra",
-                    "province": "Imbabura Province",
-                    "count": 118
+                    "count": 127,
+                    "city": "Tecpán",
+                    "country": " Guatemala",
+                    "province": ""
                 },
                 {
-                    "city": "Minsk",
-                    "province": "Minsk",
-                    "count": 29
+                    "count": 58,
+                    "city": "San Pedro Carchá",
+                    "country": " Guatemala",
+                    "province": ""
                 },
                 {
-                    "city": "Manta",
-                    "province": "Manabí Province",
-                    "count": 416
+                    "count": 65,
+                    "city": "Patzún",
+                    "country": " Guatemala",
+                    "province": ""
                 },
                 {
-                    "city": "Salinas",
-                    "province": "Santa Elena Province",
-                    "count": 35
+                    "count": 322,
+                    "city": "Huehuetenango",
+                    "country": " Guatemala",
+                    "province": ""
                 },
                 {
-                    "city": "Portoviejo",
-                    "province": "Manabí Province",
-                    "count": 225
-                },
-                {
-                    "city": "Machala",
-                    "province": "El Oro Province",
-                    "count": 332
-                },
-                {
+                    "count": 40,
                     "city": "Lima",
-                    "province": "Lima Region",
-                    "count": 65
+                    "country": " Perú",
+                    "province": ""
                 },
                 {
-                    "city": "Santo Domingo de los Colorados",
-                    "province": "Santo Domingo de los Colorados, Santo Domingo de los Tsáchilas Province",
-                    "count": 451
+                    "count": 260,
+                    "city": "Izabal",
+                    "country": " Guatemala",
+                    "province": ""
                 },
                 {
-                    "city": "La Libertad",
-                    "province": "La Libertad, Santa Elena Province",
-                    "count": 40
-                },
+                    "count": 69,
+                    "city": "Retalhuleu",
+                    "country": " Guatemala",
+                    "province": ""
+                }
+            ],
+            "Ecuador": [
                 {
-                    "city": "Istanbul",
-                    "province": "Istanbul Province",
-                    "count": 35
-                },
-                {
-                    "city": "Mexico City",
-                    "province": "Mexico City, Distrito Federal",
-                    "count": 31
-                },
-                {
-                    "city": "Pomasqui",
-                    "province": "Pichincha Province",
-                    "count": 50
-                },
-                {
+                    "count": 132,
                     "city": "Durán",
-                    "province": "Durán, Guayas Province",
-                    "count": 389
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "Tehran",
-                    "province": "Tehran Province",
-                    "count": 28
+                    "count": 698,
+                    "city": "Quito",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "New York",
-                    "province": "New York, New York",
-                    "count": 64
+                    "count": 86,
+                    "city": "Santa Rosa",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "Dubai",
-                    "province": "Dubai",
-                    "count": 37
+                    "count": 103,
+                    "city": "Daule",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "Santiago",
-                    "province": "Santiago Metropolitan Region",
-                    "count": 42
+                    "count": 138,
+                    "city": "Esmeraldas",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "Ambato",
-                    "province": "Tungurahua Province",
-                    "count": 134
+                    "count": 46,
+                    "city": "Samborondón",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "Milagro",
-                    "province": "Guayas Province",
-                    "count": 128
+                    "count": 67,
+                    "city": "Naranjal",
+                    "country": " Ecuador",
+                    "province": " Ecuador"
                 },
                 {
-                    "city": "Singapore",
-                    "province": "Singapore",
-                    "count": 52
-                },
-                {
-                    "city": "Latacunga",
-                    "province": "Cotopaxi Province",
-                    "count": 44
-                },
-                {
-                    "city": "Sangolquí",
-                    "province": "Sangolquí, Pichincha Province",
-                    "count": 162
-                },
-                {
+                    "count": 223,
                     "city": "Cuenca",
-                    "province": "Azuay Province",
-                    "count": 667
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "Cumbayá",
-                    "province": "Cumbayá, Pichincha Province",
-                    "count": 74
+                    "count": 51,
+                    "city": "Velasco Ibarra",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "Santa Cruz de la Sierra",
-                    "province": "Santa Cruz de la Sierra, Santa Cruz Department",
-                    "count": 31
+                    "count": 38,
+                    "city": "Montecristi",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "Philadelphia",
-                    "province": "Pennsylvania",
-                    "count": 7
+                    "count": 44,
+                    "city": "Santa Lucía",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "Jarabacoa",
-                    "province": "La Vega Province",
-                    "count": 7
+                    "count": 39,
+                    "city": "La Maná",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "Fantino",
-                    "province": "Sánchez Ramírez Province",
-                    "count": 7
+                    "count": 74,
+                    "city": "Jipijapa",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "São Paulo",
-                    "province": "São Paulo, São Paulo (state)",
-                    "count": 28
+                    "count": 172,
+                    "city": "Quevedo",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "La Romana",
-                    "province": "La Romana, La Romana Province",
-                    "count": 42
+                    "count": 172,
+                    "city": "Milagro",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "Mao",
-                    "province": "Valverde Province",
-                    "count": 14
+                    "count": 67,
+                    "city": "La Libertad",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "Cotuí",
-                    "province": "Cotuí, Sánchez Ramírez Province",
-                    "count": 9
+                    "count": 1951,
+                    "city": "Guayaquil",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "Azua de Compostela",
-                    "province": "Azua de Compostela, Azua Province",
-                    "count": 13
+                    "count": 44,
+                    "city": "La Troncal",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "Bávaro",
-                    "province": "Bávaro, La Altagracia Province",
-                    "count": 8
+                    "count": 166,
+                    "city": "Loja",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "Bajos de Haina",
-                    "province": "Bajos de Haina, San Cristóbal Province",
-                    "count": 16
+                    "count": 53,
+                    "city": "Pasaje",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "Portmore",
-                    "province": "Saint Catherine Parish",
-                    "count": 18
+                    "count": 204,
+                    "city": "Ambato",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "Puerto Plata",
-                    "province": "Puerto Plata, Puerto Plata province",
-                    "count": 36
+                    "count": 52,
+                    "city": "Buena Fe",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "Rio de Janeiro",
-                    "province": "Rio de Janeiro, Rio de Janeiro (state)",
-                    "count": 10
+                    "count": 63,
+                    "city": "Ventanas",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "Jima Abajo",
-                    "province": "Jima Abajo, La Vega Province",
-                    "count": 13
+                    "count": 37,
+                    "city": "Azogues",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "Baní",
-                    "province": "Baní, Peravia Province",
-                    "count": 15
+                    "count": 50,
+                    "city": "Montalvo",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "Willemstad",
-                    "province": "Curaçao",
-                    "count": 47
+                    "count": 165,
+                    "city": "Riobamba",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "Oranjestad",
-                    "province": "Aruba",
-                    "count": 8
+                    "count": 174,
+                    "city": "Babahoyo",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "Falmouth",
-                    "province": "Trelawny Parish",
-                    "count": 6
+                    "count": 41,
+                    "city": "Salinas",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
+                    "count": 85,
+                    "city": "Santa Elena",
+                    "country": " Ecuador",
+                    "province": ""
+                },
+                {
+                    "count": 250,
+                    "city": "Machala",
+                    "country": " Ecuador",
+                    "province": ""
+                },
+                {
+                    "count": 147,
+                    "city": "Manta",
+                    "country": " Ecuador",
+                    "province": ""
+                },
+                {
+                    "count": 85,
+                    "city": "Nueva York",
+                    "country": " Estados Unidos",
+                    "province": ""
+                },
+                {
+                    "count": 205,
                     "city": "Santo Domingo",
-                    "province": "Santo Domingo, Distrito Nacional",
-                    "count": 783
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "San Francisco de Macorís",
-                    "province": "San Francisco de Macorís, Duarte Province",
-                    "count": 38
+                    "count": 39,
+                    "city": "General Villamil",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "Dajabón",
-                    "province": "Dajabón, Dajabón Province",
-                    "count": 7
+                    "count": 45,
+                    "city": "Nueva Loja",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "Spanish Town",
-                    "province": "Spanish Town, Saint Catherine Parish",
-                    "count": 14
+                    "count": 72,
+                    "city": "Latacunga",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "Mandeville",
-                    "province": "Manchester Parish",
-                    "count": 8
+                    "count": 78,
+                    "city": "Chone",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "Montego Bay",
-                    "province": "Montego Bay, Saint James Parish",
-                    "count": 11
+                    "count": 38,
+                    "city": "Puerto Francisco de Orellana",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "Villa Tapia",
-                    "province": "Villa Tapia, Salcedo",
-                    "count": 6
+                    "count": 49,
+                    "city": "El Carmen",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "Esperanza",
-                    "province": "Valverde Province",
-                    "count": 11
+                    "count": 59,
+                    "city": "Puyo",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "San Juan de la Maguana",
-                    "province": "San Juan de la Maguana, San Juan Province (Dominican Republic)",
-                    "count": 12
+                    "count": 83,
+                    "city": "Ibarra",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "Tamboril",
-                    "province": "Santiago Province",
-                    "count": 11
+                    "count": 92,
+                    "city": "Vinces",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "Higüey",
-                    "province": "Higüey, La Altagracia Province",
-                    "count": 33
+                    "count": 195,
+                    "city": "Portoviejo",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "Kingston",
-                    "province": "Saint Andrew Parish",
-                    "count": 167
+                    "count": 60,
+                    "city": "Huaquillas",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "Moca",
-                    "province": "Espaillat Province",
-                    "count": 23
+                    "count": 60,
+                    "city": "Rosa Zárate",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "Monte Cristi",
-                    "province": "Monte Cristi, Monte Cristi Province",
-                    "count": 8
+                    "count": 2492,
+                    "city": "Durán",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "Bonao",
-                    "province": "Monseñor Nouel Province",
-                    "count": 18
+                    "count": 40370,
+                    "city": "Quito",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "Boca Chica",
-                    "province": "Boca Chica, Santo Domingo Province",
-                    "count": 9
+                    "count": 920,
+                    "city": "Santa Rosa",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "Nagua",
-                    "province": "María Trinidad Sánchez Province",
-                    "count": 13
+                    "count": 1464,
+                    "city": "Daule",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "Newark",
-                    "province": "New Jersey",
-                    "count": 6
+                    "count": 1174,
+                    "city": "Conocoto",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "Villa Bisonó",
-                    "province": "Villa Bisonó, Santiago Province",
-                    "count": 6
+                    "count": 2461,
+                    "city": "Esmeraldas",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "New York",
-                    "province": "New York, New York",
-                    "count": 201
+                    "count": 8564,
+                    "city": "Cuenca",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "Belo Horizonte",
-                    "province": "Belo Horizonte, Minas Gerais",
-                    "count": 7
+                    "count": 641,
+                    "city": "Montecristi",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "Paterson",
-                    "province": "New Jersey",
-                    "count": 15
+                    "count": 896,
+                    "city": "Tulcán",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "Santiago",
-                    "province": "Santiago Province",
-                    "count": 207
+                    "count": 960,
+                    "city": "Jipijapa",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "Los Alcarrizos",
-                    "province": "Los Alcarrizos, Santo Domingo Province",
-                    "count": 22
+                    "count": 2504,
+                    "city": "Quevedo",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "Boston",
-                    "province": "Massachusetts",
-                    "count": 11
+                    "count": 2823,
+                    "city": "Milagro",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "San Pedro de Macorís",
-                    "province": "San Pedro de Macorís, San Pedro de Macorís Province",
-                    "count": 30
+                    "count": 1333,
+                    "city": "La Libertad",
+                    "country": " Ecuador",
+                    "province": ""
                 },
                 {
-                    "city": "La Vega",
-                    "province": "La Vega, La Vega Province",
-                    "count": 27
+                    "count": 687,
+                    "city": "Guaranda",
+                    "country": " Ecuador",
+                    "province": ""
+                },
+                {
+                    "count": 50211,
+                    "city": "Guayaquil",
+                    "country": " Ecuador",
+                    "province": ""
+                },
+                {
+                    "count": 680,
+                    "city": "La Troncal",
+                    "country": " Ecuador",
+                    "province": ""
+                },
+                {
+                    "count": 4329,
+                    "city": "Loja",
+                    "country": " Ecuador",
+                    "province": ""
+                },
+                {
+                    "count": 869,
+                    "city": "Pasaje",
+                    "country": " Ecuador",
+                    "province": ""
+                },
+                {
+                    "count": 5289,
+                    "city": "Ambato",
+                    "country": " Ecuador",
+                    "province": ""
+                },
+                {
+                    "count": 765,
+                    "city": "Otavalo",
+                    "country": " Ecuador",
+                    "province": ""
+                },
+                {
+                    "count": 650,
+                    "city": "Buena Fe",
+                    "country": " Ecuador",
+                    "province": ""
+                },
+                {
+                    "count": 944,
+                    "city": "Azogues",
+                    "country": " Ecuador",
+                    "province": ""
+                },
+                {
+                    "count": 2038,
+                    "city": "Babahoyo",
+                    "country": " Ecuador",
+                    "province": ""
+                },
+                {
+                    "count": 4200,
+                    "city": "Riobamba",
+                    "country": " Ecuador",
+                    "province": ""
+                },
+                {
+                    "count": 1286,
+                    "city": "Sangolquí",
+                    "country": " Ecuador",
+                    "province": ""
+                },
+                {
+                    "count": 737,
+                    "city": "Cayambe",
+                    "country": " Ecuador",
+                    "province": ""
+                },
+                {
+                    "count": 722,
+                    "city": "Salinas",
+                    "country": " Ecuador",
+                    "province": ""
+                },
+                {
+                    "count": 1149,
+                    "city": "Santa Elena",
+                    "country": " Ecuador",
+                    "province": ""
+                },
+                {
+                    "count": 4949,
+                    "city": "Machala",
+                    "country": " Ecuador",
+                    "province": ""
+                },
+                {
+                    "count": 5528,
+                    "city": "Manta",
+                    "country": " Ecuador",
+                    "province": ""
+                },
+                {
+                    "count": 1788,
+                    "city": "Nueva York",
+                    "country": " Estados Unidos",
+                    "province": ""
+                },
+                {
+                    "count": 961,
+                    "city": "Calderón",
+                    "country": " Ecuador",
+                    "province": ""
+                },
+                {
+                    "count": 4945,
+                    "city": "Santo Domingo",
+                    "country": " Ecuador",
+                    "province": ""
+                },
+                {
+                    "count": 913,
+                    "city": "Nueva Loja",
+                    "country": " Ecuador",
+                    "province": ""
+                },
+                {
+                    "count": 739,
+                    "city": "Tena",
+                    "country": " Ecuador",
+                    "province": ""
+                },
+                {
+                    "count": 1979,
+                    "city": "Latacunga",
+                    "country": " Ecuador",
+                    "province": ""
+                },
+                {
+                    "count": 1118,
+                    "city": "Chone",
+                    "country": " Ecuador",
+                    "province": ""
+                },
+                {
+                    "count": 607,
+                    "city": "Vinces",
+                    "country": " Ecuador",
+                    "province": ""
+                },
+                {
+                    "count": 765,
+                    "city": "Puerto Francisco de Orellana",
+                    "country": " Ecuador",
+                    "province": ""
+                },
+                {
+                    "count": 826,
+                    "city": "El Carmen",
+                    "country": " Ecuador",
+                    "province": ""
+                },
+                {
+                    "count": 887,
+                    "city": "Puyo",
+                    "country": " Ecuador",
+                    "province": ""
+                },
+                {
+                    "count": 3141,
+                    "city": "Ibarra",
+                    "country": " Ecuador",
+                    "province": ""
+                },
+                {
+                    "count": 4512,
+                    "city": "Portoviejo",
+                    "country": " Ecuador",
+                    "province": ""
+                },
+                {
+                    "count": 797,
+                    "city": "Rosa Zárate",
+                    "country": " Ecuador",
+                    "province": ""
+                },
+                {
+                    "count": 828,
+                    "city": "Huaquillas",
+                    "country": " Ecuador",
+                    "province": ""
+                }
+            ],
+            "Colombia": [
+                {
+                    "count": 175,
+                    "city": "Barbosa",
+                    "country": " Colombia",
+                    "province": ""
+                },
+                {
+                    "count": 238,
+                    "city": "Caucasia",
+                    "country": " Colombia",
+                    "province": ""
+                },
+                {
+                    "count": 146,
+                    "city": "Marinilla",
+                    "country": " Colombia",
+                    "province": ""
+                },
+                {
+                    "count": 233,
+                    "city": "Villavicencio",
+                    "province": " Meta",
+                    "country": " Colombia"
+                },
+                {
+                    "count": 107,
+                    "city": "Puerto Berrío",
+                    "country": " Colombia",
+                    "province": ""
+                },
+                {
+                    "count": 107,
+                    "city": "Turbo",
+                    "country": " Colombia",
+                    "province": ""
+                },
+                {
+                    "count": 227,
+                    "city": "Pasto",
+                    "country": " Colombia",
+                    "province": ""
+                },
+                {
+                    "count": 12645,
+                    "city": "Medellín",
+                    "country": " Colombia",
+                    "province": ""
+                },
+                {
+                    "count": 137,
+                    "city": "Barrancabermeja",
+                    "province": " Santander",
+                    "country": " Colombia"
+                },
+                {
+                    "count": 300,
+                    "city": "Barranquilla",
+                    "country": " Colombia",
+                    "province": ""
+                },
+                {
+                    "count": 250,
+                    "city": "Santa Marta",
+                    "country": " Colombia",
+                    "province": ""
+                },
+                {
+                    "count": 131,
+                    "city": "Amagá",
+                    "country": " Colombia",
+                    "province": ""
+                },
+                {
+                    "count": 678,
+                    "city": "Cali",
+                    "country": " Colombia",
+                    "province": ""
+                },
+                {
+                    "count": 112,
+                    "city": "Palmira",
+                    "country": " Colombia",
+                    "province": ""
+                },
+                {
+                    "count": 304,
+                    "city": "Sabaneta",
+                    "country": " Colombia",
+                    "province": ""
+                },
+                {
+                    "count": 314,
+                    "city": "Apartadó",
+                    "country": " Colombia",
+                    "province": ""
+                },
+                {
+                    "count": 206,
+                    "city": "Santa Rosa de Osos",
+                    "country": " Colombia",
+                    "province": ""
+                },
+                {
+                    "count": 604,
+                    "city": "Envigado",
+                    "country": " Colombia",
+                    "province": ""
+                },
+                {
+                    "count": 104,
+                    "city": "El Bagre",
+                    "country": " Colombia",
+                    "province": ""
+                },
+                {
+                    "count": 195,
+                    "city": "Giradota",
+                    "country": " Colombia",
+                    "province": " Antioquia"
+                },
+                {
+                    "count": 116,
+                    "city": "El Carmen de Viboral",
+                    "country": " Colombia",
+                    "province": ""
+                },
+                {
+                    "count": 153,
+                    "city": "Montería",
+                    "country": " Colombia",
+                    "province": ""
+                },
+                {
+                    "count": 327,
+                    "city": "Ibagué",
+                    "country": " Colombia",
+                    "province": ""
+                },
+                {
+                    "count": 114,
+                    "city": "Andes",
+                    "country": " Colombia",
+                    "province": ""
+                },
+                {
+                    "count": 321,
+                    "city": "Bucaramanga",
+                    "province": " Santander",
+                    "country": " Colombia"
+                },
+                {
+                    "count": 190,
+                    "city": "Guarne",
+                    "country": " Colombia",
+                    "province": ""
+                },
+                {
+                    "count": 128,
+                    "city": "Segovia",
+                    "country": " Colombia",
+                    "province": ""
+                },
+                {
+                    "count": 288,
+                    "city": "Manizales",
+                    "country": " Colombia",
+                    "province": ""
+                },
+                {
+                    "count": 157,
+                    "city": "La Estrella",
+                    "country": " Colombia",
+                    "province": ""
+                },
+                {
+                    "count": 1292,
+                    "city": "Bello",
+                    "country": " Colombia",
+                    "province": ""
+                },
+                {
+                    "count": 345,
+                    "city": "Pereira",
+                    "country": " Colombia",
+                    "province": ""
+                },
+                {
+                    "count": 103,
+                    "city": "Dosquebradas",
+                    "country": " Colombia",
+                    "province": ""
+                },
+                {
+                    "count": 368,
+                    "city": "La Ceja",
+                    "country": " Colombia",
+                    "province": " Antioquia"
+                },
+                {
+                    "count": 3047,
+                    "city": "Bogotá",
+                    "country": " Colombia",
+                    "province": ""
+                },
+                {
+                    "count": 265,
+                    "city": "Cúcuta",
+                    "country": " Colombia",
+                    "province": ""
+                },
+                {
+                    "count": 701,
+                    "city": "Rionegro",
+                    "country": " Colombia",
+                    "province": ""
+                },
+                {
+                    "count": 116,
+                    "city": "Sincelejo",
+                    "province": " Sucre",
+                    "country": " Colombia"
+                },
+                {
+                    "count": 194,
+                    "city": "Armenia",
+                    "country": " Colombia",
+                    "province": ""
+                },
+                {
+                    "count": 335,
+                    "city": "Copacabana",
+                    "country": " Colombia",
+                    "province": ""
+                },
+                {
+                    "count": 126,
+                    "city": "Yarumal",
+                    "country": " Colombia",
+                    "province": ""
+                },
+                {
+                    "count": 124,
+                    "city": "Neiva",
+                    "province": " Huila",
+                    "country": " Colombia"
+                },
+                {
+                    "count": 209,
+                    "city": "Popayán",
+                    "country": " Colombia",
+                    "province": ""
+                },
+                {
+                    "count": 850,
+                    "city": "Itagüí",
+                    "country": " Colombia",
+                    "province": ""
+                },
+                {
+                    "count": 285,
+                    "city": "Caldas",
+                    "country": " Colombia",
+                    "province": ""
+                },
+                {
+                    "count": 287,
+                    "city": "Cartagena de Indias",
+                    "country": " Colombia",
+                    "province": ""
                 }
             ]
         },

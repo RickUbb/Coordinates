@@ -138,8 +138,12 @@ def obtener_coordenadas(db, collection_name, country: str, province: str, city: 
         return province_lat, province_lon, city_lat, city_lon
 
     else:
-        display_name_parts = _.rsplit(', ')
-        country = display_name_parts[-1]
+        if _ != None:
+            
+            display_name_parts = _.rsplit(', ')
+            country = display_name_parts[-1]
+        else:
+            _ == "No disponible"
         add_one_coordinate(db, collection_name, country, province, city,
                            province_lat, province_lon, city_lat, city_lon)
         return province_lat, province_lon, city_lat, city_lon
