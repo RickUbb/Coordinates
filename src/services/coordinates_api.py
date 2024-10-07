@@ -128,6 +128,9 @@ def obtener_coordenadas(db, collection_name, country: str, province: str, city: 
     else:
         city_lat, city_lon = None, None
 
+    if province_lat == None and province_lon == None and city_lat == None and city_lon == None:
+        return None, None, None, None 
+
     # if province_lat and province_lon or city_lat and city_lon:
     if country_exist and country != "NA":
         add_one_coordinate(db, collection_name, country, province, city,

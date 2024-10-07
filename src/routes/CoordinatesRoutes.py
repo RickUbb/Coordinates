@@ -85,6 +85,14 @@ def get_coordinates():
             errors.append(
                 {"error": f"No se pudieron obtener las coordenadas para el objeto: {obj}."})
             continue
+        elif (subnivel_3 != "NA" and lat_prov == None and lon_prov == None):
+            errors.append(
+                {"error": f"No se pudieron obtener las coordenadas en province {subnivel_3} para el objeto: {obj}."})
+            
+        elif (subnivel_4 != "NA" and lat_city == None and lon_city == None):
+            errors.append(
+                {"error": f"No se pudieron obtener las coordenadas en province {subnivel_4} para el objeto: {obj}."})
+            
 
         # Si las coordenadas fueron obtenidas correctamente, agregarlas a los resultados
         result = {}

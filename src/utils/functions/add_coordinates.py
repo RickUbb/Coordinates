@@ -48,11 +48,11 @@ def add_one_coordinate(db, collection_name, country: str, province: str, city: s
     data = {}
     if country != "NA":
         data['sub_1'] = normalize(country)
-    if province != "NA":
+    if province != "NA" and lat_prov != None and lon_prov != None:
         data['sub_3'] = normalize(province)
         data['lat_sub_3'] = lat_prov
         data['lon_sub_3'] = lon_prov
-    if city != "NA":
+    if city != "NA" and lat_city != None and lon_city != None:
         data['sub_4'] = normalize(city)
         data['lat_sub_4'] = lat_city
         data['lon_sub_4'] = lon_city
