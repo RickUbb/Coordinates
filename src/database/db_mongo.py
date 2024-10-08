@@ -6,8 +6,14 @@ y sus colecciones, como la colección de coordenadas. Utiliza la biblioteca `pym
 y los detalles de configuración se encuentran en el archivo `config.py`.
 """
 
-from pymongo import MongoClient  # Importa el cliente de MongoDB desde pymongo
-from config import mongo  # Importa la configuración desde el archivo config.py
+from pymongo import MongoClient
+from pymongo.errors import ConnectionFailure, ConfigurationError
+from config import mongo
+import logging
+
+# Configuración básica del logger para capturar errores
+logging.basicConfig(level=logging.ERROR,
+                    format='%(asctime)s - %(levelname)s - %(message)s')
 
 
 def get_database():
@@ -20,13 +26,13 @@ def get_database():
     Returns:
         database (Database): La instancia de la base de datos configurada en el archivo de configuración.
     """
-    client = MongoClient(
-        # Crea un cliente MongoDB utilizando la URL de conexión desde la configuración.
-        mongo['mongodb_url']
-    )
-    # Obtiene la base de datos especificada por 'mongodb_db_name' en la configuración.
-    database = client[mongo['mongodb_db_name']]
-    return database  # Retorna la instancia de la base de datos.
+    try:
+        client = MongoClient(mongo['mongodb_url'])
+        database = client[mongo['mongodb_db_name']]
+        return database
+    except (ConnectionFailure, ConfigurationError) as e:
+        logging.error(f"Error al conectar con la base de datos MongoDB: {e}")
+        return None
 
 
 def get_coordinates_collection():
@@ -39,9 +45,14 @@ def get_coordinates_collection():
     Returns:
         collection (Collection): La colección de coordenadas dentro de la base de datos.
     """
-    database = get_database(
-        # Llama a la función get_database para obtener la instancia de la base de datos.
-    )
-
-    # Retorna la colección de coordenadas usando el nombre de la colección definido en la configuración.
-    return database[mongo['mongodb_collection_name_coordinates']]
+    database = get_database()
+    if database:
+        try:
+            collection = database[mongo['mongodb_collection_name_coordinates']]
+            return collection
+        except KeyError as e:
+            logging.error(f"Error al acceder a la colección: {e}")
+            return None
+    else:
+        logging.error("No se pudo obtener la base de datos.")
+        return None

@@ -7,6 +7,8 @@ en la base de datos y, si no, las agrega a la colección de MongoDB.
 """
 
 import requests  # Para hacer solicitudes HTTP al API de OpenStreetMap
+# Para manejar excepciones específicas de requests
+from requests.exceptions import RequestException
 # Para insertar coordenadas en MongoDB
 from src.utils.functions.add_coordinates import add_one_coordinate
 
@@ -69,7 +71,7 @@ def get_coordinates_osm(direction: str, subnivel: int, country_exist: bool):
             return get_coordinates_from_data(data, 'state')
         else:
             return None, None, None
-    except requests.RequestException as e:
+    except RequestException as e:
         print(f"Error al realizar la solicitud HTTP: {e}")
         return None, None, None
 
@@ -115,39 +117,33 @@ def obtener_coordenadas(db, collection_name, country: str, province: str, city: 
     city_direction = f"{country}, {city}" if country != "NA" else city
     country_exist = country != "NA"
 
-    if (province != 'NA'):
+    if province != 'NA':
         # Obtener las coordenadas de la provincia y la ciudad
         province_lat, province_lon, _ = get_coordinates_osm(
             province_direction, 3, country_exist)
     else:
         province_lat, province_lon = None, None
 
-    if (city != 'NA'):
+    if city != 'NA':
         city_lat, city_lon, _ = get_coordinates_osm(
             city_direction, 4, country_exist)
     else:
         city_lat, city_lon = None, None
 
-    if province_lat == None and province_lon == None and city_lat == None and city_lon == None:
-        return None, None, None, None 
+    if province_lat is None and province_lon is None and city_lat is None and city_lon is None:
+        return None, None, None, None
 
-    # if province_lat and province_lon or city_lat and city_lon:
+    # Agregar coordenadas a la base de datos si country_exist
     if country_exist and country != "NA":
         add_one_coordinate(db, collection_name, country, province, city,
                            province_lat, province_lon, city_lat, city_lon)
-        return province_lat, province_lon, city_lat, city_lon
-
     else:
-        if _ != None:
-            
+        if _ is not None:
             display_name_parts = _.rsplit(', ')
             country = display_name_parts[-1]
         else:
-            _ == "No disponible"
+            country = "No disponible"
         add_one_coordinate(db, collection_name, country, province, city,
                            province_lat, province_lon, city_lat, city_lon)
-        return province_lat, province_lon, city_lat, city_lon
 
-    # print(f"No se pudieron obtener las coordenadas del API para {
-    #     province}, {city}.")
-    # return None, None, None, None
+    return province_lat, province_lon, city_lat, city_lon

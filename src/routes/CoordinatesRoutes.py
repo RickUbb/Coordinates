@@ -23,29 +23,30 @@ from config import mongo
 main = Blueprint('coordinates_blueprint', __name__)
 
 # Configuración de cliente y conexión a la base de datos MongoDB
-# Cliente MongoDB usando la URL de conexión
 client = MongoClient(mongo['mongodb_url'])
-database_name = client[mongo['mongodb_db_name']]  # Nombre de la base de datos
-# Nombre de la colección donde se almacenan coordenadas
+database_name = client[mongo['mongodb_db_name']]
 collection_name = mongo['mongodb_collection_name_coordinates']
 
 
-@cross_origin  # Decorador para permitir solicitudes CORS en esta ruta
-# Definir la ruta principal con el método POST
+@cross_origin
 @main.route('/', methods=['POST'])
 def get_coordinates():
     """
-    Ruta POST para obtener coordenadas geográficas. 
+    Ruta POST para obtener coordenadas geográficas.
     Espera un JSON que contenga una lista de objetos, donde cada objeto tiene los campos:
     - country (subnivel_1)
     - province (subnivel_3)
     - city (subnivel_4)
 
     Returns:
-        JSON: Un objeto que contiene las coordenadas de cada objeto enviado en la solicitud, 
+        JSON: Un objeto que contiene las coordenadas de cada objeto enviado en la solicitud,
         o un mensaje de error si alguno de los objetos tiene parámetros inválidos.
     """
-    data = request.get_json()  # Obtener los datos del cuerpo de la solicitud en formato JSON
+    try:
+        # Obtener los datos del cuerpo de la solicitud en formato JSON
+        data = request.get_json()
+    except Exception as e:
+        return jsonify({"error": f"Error al procesar la solicitud: {str(e)}"}), 400
 
     # Verificar que el cuerpo de la solicitud sea una lista
     if not isinstance(data, list):
@@ -57,53 +58,52 @@ def get_coordinates():
     # Procesar cada objeto en la lista
     for obj in data:
         # Normalizar los datos de entrada (país, provincia, ciudad)
-        subnivel_1 = normalize(
-            obj['country']) if 'country' in obj and obj['country'] else "NA"
-        subnivel_3 = normalize(
-            obj['province']) if 'province' in obj and obj['province'] else "NA"
-        subnivel_4 = normalize(
-            obj['city']) if 'city' in obj and obj['city'] else "NA"
+        subnivel_1 = normalize(obj.get('country', 'NA')
+                               ) if obj.get('country') else "NA"
+        subnivel_3 = normalize(obj.get('province', 'NA')
+                               ) if obj.get('province') else "NA"
+        subnivel_4 = normalize(obj.get('city', 'NA')
+                               ) if obj.get('city') else "NA"
 
         # Verificar si los parámetros requeridos están presentes
-        if not subnivel_3 and not subnivel_4:
+        if subnivel_3 == "NA" and subnivel_4 == "NA":
             errors.append({"error": f"Faltan parámetros en el objeto: {
                           obj}. Se requieren 'country', 'province' y 'city'."})
             continue
 
-        # Verificar si los valores de los subniveles son válidos
-        if subnivel_3 == "NA" and subnivel_4 == "NA":
+        try:
+            # Llamar a la función que busca o genera las coordenadas
+            lat_prov, lon_prov, lat_city, lon_city = obtener_coordenadas(
+                database_name, collection_name, subnivel_1, subnivel_3, subnivel_4
+            )
+
+            # Si no se pudieron obtener las coordenadas, registrar el error
+            if (not lat_prov or not lon_prov) and (not lat_city or not lon_city):
+                errors.append(
+                    {"error": f"No se pudieron obtener las coordenadas para el objeto: {obj}."})
+                continue
+            elif subnivel_3 != "NA" and lat_prov is None and lon_prov is None:
+                errors.append({"error": f"No se pudieron obtener las coordenadas en province {
+                              subnivel_3} para el objeto: {obj}."})
+            elif subnivel_4 != "NA" and lat_city is None and lon_city is None:
+                errors.append({"error": f"No se pudieron obtener las coordenadas en province {
+                              subnivel_4} para el objeto: {obj}."})
+
+            # Si las coordenadas fueron obtenidas correctamente, agregarlas a los resultados
+            result = {}
+            if subnivel_3 != "NA":
+                result["lat_subnivel_3"] = lat_prov
+                result["lon_subnivel_3"] = lon_prov
+            if subnivel_4 != "NA":
+                result["lat_subnivel_4"] = lat_city
+                result["lon_subnivel_4"] = lon_city
+
+            results.append(result)
+
+        except Exception as e:
             errors.append(
-                {"error": f"Parámetros inconsistentes en el objeto: {obj}."})
+                {"error": f"Error al procesar el objeto {obj}: {str(e)}"})
             continue
-
-        # Llamar a la función que busca o genera las coordenadas
-        lat_prov, lon_prov, lat_city, lon_city = obtener_coordenadas(
-            database_name, collection_name, subnivel_1, subnivel_3, subnivel_4)
-
-        # Si no se pudieron obtener las coordenadas, registrar el error
-        if (not lat_prov or not lon_prov) and (not lat_city or not lon_city):
-            errors.append(
-                {"error": f"No se pudieron obtener las coordenadas para el objeto: {obj}."})
-            continue
-        elif (subnivel_3 != "NA" and lat_prov == None and lon_prov == None):
-            errors.append(
-                {"error": f"No se pudieron obtener las coordenadas en province {subnivel_3} para el objeto: {obj}."})
-            
-        elif (subnivel_4 != "NA" and lat_city == None and lon_city == None):
-            errors.append(
-                {"error": f"No se pudieron obtener las coordenadas en province {subnivel_4} para el objeto: {obj}."})
-            
-
-        # Si las coordenadas fueron obtenidas correctamente, agregarlas a los resultados
-        result = {}
-        if subnivel_3 != "NA":
-            result["lat_subnivel_3"] = lat_prov
-            result["lon_subnivel_3"] = lon_prov
-        if subnivel_4 != "NA":
-            result["lat_subnivel_4"] = lat_city
-            result["lon_subnivel_4"] = lon_city
-
-        results.append(result)
 
     # Retornar los resultados y los errores
     return jsonify({

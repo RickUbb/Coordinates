@@ -1,27 +1,37 @@
-# Importa la clase Flask para crear una aplicación web.
-from flask import Flask
-# Importa CORS para manejar el Cross-Origin Resource Sharing (CORS).
+"""
+__init__.py
+
+Este archivo inicializa la aplicación Flask y registra los blueprints. 
+También habilita el soporte de CORS para permitir solicitudes desde dominios externos.
+"""
+
+from flask import Flask  # Importa la clase Flask
+# Importa CORS para permitir el intercambio de recursos de origen cruzado
 from flask_cors import CORS
-# Importa las rutas de coordenadas desde el módulo de rutas.
+# Importa las rutas del módulo CoordinatesRoutes
 from src.routes import CoordinatesRoutes
 
-# Crea una instancia de la aplicación Flask.
+# Instancia la aplicación Flask
 app = Flask(__name__)
 
-# Aplica CORS a la aplicación para permitir solicitudes de diferentes dominios.
+# Aplica CORS para permitir solicitudes de diferentes dominios
 CORS(app)
 
 
 def init_app():
     """
-    Inicializa la aplicación Flask y registra los blueprints (rutas).
+    Inicializa la aplicación Flask y registra los blueprints.
 
     Returns:
-        app: Instancia de la aplicación Flask con las rutas registradas.
+        Flask: Instancia de la aplicación Flask con los blueprints registrados.
     """
+    try:
+        # Registra el blueprint del módulo CoordinatesRoutes bajo el prefijo '/coordinates'
+        app.register_blueprint(CoordinatesRoutes.main,
+                               url_prefix='/coordinates')
 
-    # Registra el blueprint del módulo CoordinatesRoutes en la ruta '/coordinates'.
-    app.register_blueprint(CoordinatesRoutes.main, url_prefix='/coordinates')
-
-    # Retorna la instancia de la aplicación Flask con el blueprint registrado.
-    return app
+        return app  # Devuelve la instancia de Flask configurada
+    except Exception as e:
+        # Manejo de errores en caso de fallo al registrar rutas o inicializar la app
+        raise RuntimeError(
+            f"Error al registrar las rutas en la aplicación Flask: {e}")
