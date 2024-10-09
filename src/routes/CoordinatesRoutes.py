@@ -26,6 +26,7 @@ main = Blueprint('coordinates_blueprint', __name__)
 client = MongoClient(mongo['mongodb_url'])
 database_name = client[mongo['mongodb_db_name']]
 collection_name = mongo['mongodb_collection_name_coordinates']
+collection_error_name = mongo["mongodb_collection_name_error_coordinates"]
 
 
 @cross_origin
@@ -46,11 +47,11 @@ def get_coordinates():
         # Obtener los datos del cuerpo de la solicitud en formato JSON
         data = request.get_json()
     except Exception as e:
-        return jsonify({"error": f"Error al procesar la solicitud: {str(e)}"}), 400
+        return jsonify({"error": f"No se pudo procesar el cuerpo de la solicitud. Asegúrate de que esté en formato JSON. Detalles del error: {str(e)}"}), 400
 
     # Verificar que el cuerpo de la solicitud sea una lista
     if not isinstance(data, list):
-        return jsonify({"error": "El cuerpo de la solicitud debe ser una lista de objetos."}), 400
+        return jsonify({"error": "El cuerpo de la solicitud debe ser una lista de objetos JSON."}), 400
 
     results = []  # Lista para almacenar los resultados de cada objeto
     errors = []   # Lista para almacenar errores de cada objeto
@@ -68,26 +69,26 @@ def get_coordinates():
         # Verificar si los parámetros requeridos están presentes
         if subnivel_3 == "NA" and subnivel_4 == "NA":
             errors.append({"error": f"Faltan parámetros en el objeto: {
-                          obj}. Se requieren 'country', 'province' y 'city'."})
+                          obj}. Los campos 'province' o 'city' son obligatorios."})
             continue
 
         try:
             # Llamar a la función que busca o genera las coordenadas
             lat_prov, lon_prov, lat_city, lon_city = obtener_coordenadas(
-                database_name, collection_name, subnivel_1, subnivel_3, subnivel_4
+                database_name, collection_name, collection_error_name, subnivel_1, subnivel_3, subnivel_4
             )
 
             # Si no se pudieron obtener las coordenadas, registrar el error
             if (not lat_prov or not lon_prov) and (not lat_city or not lon_city):
                 errors.append(
-                    {"error": f"No se pudieron obtener las coordenadas para el objeto: {obj}."})
+                    {"error": f"No se encontraron coordenadas para el objeto: {obj}. Verifica que los nombres de 'province' y 'city' sean correctos."})
                 continue
             elif subnivel_3 != "NA" and lat_prov is None and lon_prov is None:
-                errors.append({"error": f"No se pudieron obtener las coordenadas en province {
-                              subnivel_3} para el objeto: {obj}."})
+                errors.append({"error": f"No se pudieron obtener coordenadas para la provincia '{
+                              subnivel_3}' en el objeto: {obj}."})
             elif subnivel_4 != "NA" and lat_city is None and lon_city is None:
-                errors.append({"error": f"No se pudieron obtener las coordenadas en province {
-                              subnivel_4} para el objeto: {obj}."})
+                errors.append({"error": f"No se pudieron obtener coordenadas para la ciudad '{
+                              subnivel_4}' en el objeto: {obj}."})
 
             # Si las coordenadas fueron obtenidas correctamente, agregarlas a los resultados
             result = {}
@@ -102,7 +103,9 @@ def get_coordinates():
 
         except Exception as e:
             errors.append(
-                {"error": f"Error al procesar el objeto {obj}: {str(e)}"})
+                #    {"error": f"Error al procesar el objeto {obj}: {str(e)}"})
+                {"error": f"Error al procesar el objeto {obj}. Ocurrió un problema al intentar obtener las coordenadas. Detalles del error: {str(e)}"})
+
             continue
 
     # Retornar los resultados y los errores

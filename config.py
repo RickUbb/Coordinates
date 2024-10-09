@@ -15,5 +15,7 @@ mongo = {
     # Nombre de la base de datos
     'mongodb_db_name': config('MONGODB_DB_NAME', default='mydatabase'),
     # Nombre de la colección
-    'mongodb_collection_name_coordinates': config('MONGODB_COLLECTION_NAME_COORDINATES', default='coordinates')
+    'mongodb_collection_name_coordinates': config('MONGODB_COLLECTION_NAME_COORDINATES', default='coordinates'),
+    # Nombre de la colección de errores
+    'mongodb_collection_name_error_coordinates': config('MONGODB_COLLECTION_NAME_ERROR_COORDINATES', default='coordinatesErrors')
 }

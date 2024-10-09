@@ -56,3 +56,26 @@ def get_coordinates_collection():
     else:
         logging.error("No se pudo obtener la base de datos.")
         return None
+
+
+def get_coordinates_error_collection():
+    """
+    Obtiene la colección de coordenadas con errores desde la base de datos MongoDB.
+
+    Llama a la función `get_database` para establecer la conexión con la base de datos y luego accede a la colección
+    de coordenadas que está configurada bajo el nombre `mongodb_collection_name_coordinates` en el archivo de configuración.
+
+    Returns:
+        collection (Collection): La colección de coordenadas dentro de la base de datos.
+    """
+    database = get_database()
+    if database:
+        try:
+            collection = database[mongo['mongodb_collection_name_error_coordinates']]
+            return collection
+        except KeyError as e:
+            logging.error(f"Error al acceder a la colección: {e}")
+            return None
+    else:
+        logging.error("No se pudo obtener la base de datos.")
+        return None
