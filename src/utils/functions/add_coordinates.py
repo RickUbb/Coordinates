@@ -11,6 +11,9 @@ import logging  # Para el registro de mensajes de error y eventos
 from pymongo.errors import ConnectionFailure, DuplicateKeyError, OperationFailure
 # Importa la función de normalización de texto
 from src.utils.functions.normalize_text import normalize
+# Importa la función para obtener los códigos ISO
+from src.services.iso_service import get_iso_from_country
+
 
 # Configuración básica del logger para capturar errores
 logging.basicConfig(level=logging.ERROR,
@@ -47,7 +50,19 @@ def add_one_coordinate(db, collection_name, country: str, province: str, city: s
     # Preparar el documento a insertar
     data = {}
     if country != "NA":
-        data['sub_1'] = normalize(country)
+        data['sub_1'] = country
+        # Llamar a la función para obtener los códigos ISO del país
+        iso_codes = get_iso_from_country(country)
+        if 'error' in iso_codes:
+            data['sub_1_alpha_2'] = 'NA'
+            data['sub_1_alpha_3'] = 'NA'
+            logging.error(f"Error al obtener los códigos ISO: {
+                          iso_codes['error']}")
+
+        else:
+            # Asignar los códigos ISO al diccionario 'data'
+            data['sub_1_alpha_2'] = iso_codes['cca2']
+            data['sub_1_alpha_3'] = iso_codes['cca3']
     if province != "NA" and lat_prov is not None and lon_prov is not None:
         data['sub_3'] = normalize(province)
         data['lat_sub_3'] = lat_prov

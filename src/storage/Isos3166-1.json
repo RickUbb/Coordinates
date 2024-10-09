@@ -1,0 +1,588 @@
+[
+    {
+        "name": {
+            "common": "United States",
+            "official": "United States of America",
+            "nativeName": {
+                "eng": {
+                    "official": "United States of America",
+                    "common": "United States"
+                }
+            }
+        },
+        "cca2": "US",
+        "cca3": "USA"
+    },
+    {
+        "name": {
+            "common": "Ecuador",
+            "official": "Republic of Ecuador",
+            "nativeName": {
+                "spa": {
+                    "official": "República del Ecuador",
+                    "common": "Ecuador"
+                }
+            }
+        },
+        "cca2": "EC",
+        "cca3": "ECU"
+    },
+    {
+        "name": {
+            "common": "Colombia",
+            "official": "Republic of Colombia",
+            "nativeName": {
+                "spa": {
+                    "official": "República de Colombia",
+                    "common": "Colombia"
+                }
+            }
+        },
+        "cca2": "CO",
+        "cca3": "COL"
+    },
+    {
+        "name": {
+            "common": "Spain",
+            "official": "Kingdom of Spain",
+            "nativeName": {
+                "spa": {
+                    "official": "Reino de España",
+                    "common": "España"
+                }
+            }
+        },
+        "cca2": "ES",
+        "cca3": "ESP"
+    },
+    {
+        "name": {
+            "common": "Peru",
+            "official": "Republic of Peru",
+            "nativeName": {
+                "aym": {
+                    "official": "Piruw Suyu",
+                    "common": "Piruw"
+                },
+                "que": {
+                    "official": "Piruw Ripuwlika",
+                    "common": "Piruw"
+                },
+                "spa": {
+                    "official": "República del Perú",
+                    "common": "Perú"
+                }
+            }
+        },
+        "cca2": "PE",
+        "cca3": "PER"
+    },
+    {
+        "name": {
+            "common": "Mexico",
+            "official": "United Mexican States",
+            "nativeName": {
+                "spa": {
+                    "official": "Estados Unidos Mexicanos",
+                    "common": "México"
+                }
+            }
+        },
+        "cca2": "MX",
+        "cca3": "MEX"
+    },
+    {
+        "name": {
+            "common": "Argentina",
+            "official": "Argentine Republic",
+            "nativeName": {
+                "grn": {
+                    "official": "Argentine Republic",
+                    "common": "Argentina"
+                },
+                "spa": {
+                    "official": "República Argentina",
+                    "common": "Argentina"
+                }
+            }
+        },
+        "cca2": "AR",
+        "cca3": "ARG"
+    },
+    {
+        "name": {
+            "common": "Chile",
+            "official": "Republic of Chile",
+            "nativeName": {
+                "spa": {
+                    "official": "República de Chile",
+                    "common": "Chile"
+                }
+            }
+        },
+        "cca2": "CL",
+        "cca3": "CHL"
+    },
+    {
+        "name": {
+            "common": "Vietnam",
+            "official": "Socialist Republic of Vietnam",
+            "nativeName": {
+                "vie": {
+                    "official": "Cộng hòa xã hội chủ nghĩa Việt Nam",
+                    "common": "Việt Nam"
+                }
+            }
+        },
+        "cca2": "VN",
+        "cca3": "VNM"
+    },
+    {
+        "name": {
+            "common": "Panama",
+            "official": "Republic of Panama",
+            "nativeName": {
+                "spa": {
+                    "official": "República de Panamá",
+                    "common": "Panamá"
+                }
+            }
+        },
+        "cca2": "PA",
+        "cca3": "PAN"
+    },
+    {
+        "name": {
+            "common": "São Tomé and Príncipe",
+            "official": "Democratic Republic of São Tomé and Príncipe",
+            "nativeName": {
+                "por": {
+                    "official": "República Democrática do São Tomé e Príncipe",
+                    "common": "São Tomé e Príncipe"
+                }
+            }
+        },
+        "cca2": "ST",
+        "cca3": "STP"
+    },
+    {
+        "name": {
+            "common": "Brazil",
+            "official": "Federative Republic of Brazil",
+            "nativeName": {
+                "por": {
+                    "official": "República Federativa do Brasil",
+                    "common": "Brasil"
+                }
+            }
+        },
+        "cca2": "BR",
+        "cca3": "BRA"
+    },
+    {
+        "name": {
+            "common": "Guatemala",
+            "official": "Republic of Guatemala",
+            "nativeName": {
+                "spa": {
+                    "official": "República de Guatemala",
+                    "common": "Guatemala"
+                }
+            }
+        },
+        "cca2": "GT",
+        "cca3": "GTM"
+    },
+    {
+        "name": {
+            "common": "Venezuela",
+            "official": "Bolivarian Republic of Venezuela",
+            "nativeName": {
+                "spa": {
+                    "official": "República Bolivariana de Venezuela",
+                    "common": "Venezuela"
+                }
+            }
+        },
+        "cca2": "VE",
+        "cca3": "VEN"
+    },
+    {
+        "name": {
+            "common": "Uruguay",
+            "official": "Oriental Republic of Uruguay",
+            "nativeName": {
+                "spa": {
+                    "official": "República Oriental del Uruguay",
+                    "common": "Uruguay"
+                }
+            }
+        },
+        "cca2": "UY",
+        "cca3": "URY"
+    },
+    {
+        "name": {
+            "common": "Azerbaijan",
+            "official": "Republic of Azerbaijan",
+            "nativeName": {
+                "aze": {
+                    "official": "Azərbaycan Respublikası",
+                    "common": "Azərbaycan"
+                }
+            }
+        },
+        "cca2": "AZ",
+        "cca3": "AZE"
+    },
+    {
+        "name": {
+            "common": "Bolivia",
+            "official": "Plurinational State of Bolivia",
+            "nativeName": {
+                "aym": {
+                    "official": "Wuliwya Suyu",
+                    "common": "Wuliwya"
+                },
+                "grn": {
+                    "official": "Tetã Volívia",
+                    "common": "Volívia"
+                },
+                "que": {
+                    "official": "Buliwya Mamallaqta",
+                    "common": "Buliwya"
+                },
+                "spa": {
+                    "official": "Estado Plurinacional de Bolivia",
+                    "common": "Bolivia"
+                }
+            }
+        },
+        "cca2": "BO",
+        "cca3": "BOL"
+    },
+    {
+        "name": {
+            "common": "Nicaragua",
+            "official": "Republic of Nicaragua",
+            "nativeName": {
+                "spa": {
+                    "official": "República de Nicaragua",
+                    "common": "Nicaragua"
+                }
+            }
+        },
+        "cca2": "NI",
+        "cca3": "NIC"
+    },
+    {
+        "name": {
+            "common": "Honduras",
+            "official": "Republic of Honduras",
+            "nativeName": {
+                "spa": {
+                    "official": "República de Honduras",
+                    "common": "Honduras"
+                }
+            }
+        },
+        "cca2": "HN",
+        "cca3": "HND"
+    },
+    {
+        "name": {
+            "common": "Turkey",
+            "official": "Republic of Turkey",
+            "nativeName": {
+                "tur": {
+                    "official": "Türkiye Cumhuriyeti",
+                    "common": "Türkiye"
+                }
+            }
+        },
+        "cca2": "TR",
+        "cca3": "TUR"
+    },
+    {
+        "name": {
+            "common": "Singapore",
+            "official": "Republic of Singapore",
+            "nativeName": {
+                "eng": {
+                    "official": "Republic of Singapore",
+                    "common": "Singapore"
+                },
+                "zho": {
+                    "official": "新加坡共和国",
+                    "common": "新加坡"
+                },
+                "msa": {
+                    "official": "Republik Singapura",
+                    "common": "Singapura"
+                },
+                "tam": {
+                    "official": "சிங்கப்பூர் குடியரசு",
+                    "common": "சிங்கப்பூர்"
+                }
+            }
+        },
+        "cca2": "SG",
+        "cca3": "SGP"
+    },
+    {
+        "name": {
+            "common": "Jamaica",
+            "official": "Jamaica",
+            "nativeName": {
+                "eng": {
+                    "official": "Jamaica",
+                    "common": "Jamaica"
+                },
+                "jam": {
+                    "official": "Jamaica",
+                    "common": "Jamaica"
+                }
+            }
+        },
+        "cca2": "JM",
+        "cca3": "JAM"
+    },
+    {
+        "name": {
+            "common": "Philippines",
+            "official": "Republic of the Philippines",
+            "nativeName": {
+                "eng": {
+                    "official": "Republic of the Philippines",
+                    "common": "Philippines"
+                },
+                "fil": {
+                    "official": "Republic of the Philippines",
+                    "common": "Pilipinas"
+                }
+            }
+        },
+        "cca2": "PH",
+        "cca3": "PHL"
+    },
+    {
+        "name": {
+            "common": "Netherlands",
+            "official": "Kingdom of the Netherlands",
+            "nativeName": {
+                "nld": {
+                    "official": "Koninkrijk der Nederlanden",
+                    "common": "Nederland"
+                }
+            }
+        },
+        "cca2": "NL",
+        "cca3": "NLD"
+    },
+    {
+        "name": {
+            "common": "Canada",
+            "official": "Canada",
+            "nativeName": {
+                "eng": {
+                    "official": "Canada",
+                    "common": "Canada"
+                },
+                "fra": {
+                    "official": "Canada",
+                    "common": "Canada"
+                }
+            }
+        },
+        "cca2": "CA",
+        "cca3": "CAN"
+    },
+    {
+        "name": {
+            "common": "Bahamas",
+            "official": "Commonwealth of the Bahamas",
+            "nativeName": {
+                "eng": {
+                    "official": "Commonwealth of the Bahamas",
+                    "common": "Bahamas"
+                },
+                "add": {
+                    "official": "Commonwealth of the Bahamas",
+                    "common": "The Bahamas"
+                }
+            }
+        },
+        "cca2": "BS",
+        "cca3": "BHS"
+    },
+    {
+        "name": {
+            "common": "Dominican Republic",
+            "official": "Dominican Republic",
+            "nativeName": {
+                "spa": {
+                    "official": "República Dominicana",
+                    "common": "República Dominicana"
+                }
+            }
+        },
+        "cca2": "DO",
+        "cca3": "DOM"
+    },
+    {
+        "name": {
+            "common": "China",
+            "official": "People's Republic of China",
+            "nativeName": {
+                "zho": {
+                    "official": "中华人民共和国",
+                    "common": "中国"
+                }
+            }
+        },
+        "cca2": "CN",
+        "cca3": "CHN"
+    },
+    {
+        "name": {
+            "common": "Taiwan",
+            "official": "Republic of China (Taiwan)",
+            "nativeName": {
+                "zho": {
+                    "official": "中華民國",
+                    "common": "台灣"
+                }
+            }
+        },
+        "cca2": "TW",
+        "cca3": "TWN"
+    },
+    {
+        "name": {
+            "common": "United Arab Emirates",
+            "official": "United Arab Emirates",
+            "nativeName": {
+                "ara": {
+                    "official": "الإمارات العربية المتحدة",
+                    "common": "دولة الإمارات العربية المتحدة"
+                }
+            }
+        },
+        "cca2": "AE",
+        "cca3": "ARE"
+    },
+    {
+        "name": {
+            "common": "Yemen",
+            "official": "Republic of Yemen",
+            "nativeName": {
+                "ara": {
+                    "official": "الجمهورية اليمنية",
+                    "common": "اليَمَن"
+                }
+            }
+        },
+        "cca2": "YE",
+        "cca3": "YEM"
+    },
+    {
+        "name": {
+            "common": "Jordan",
+            "official": "Hashemite Kingdom of Jordan",
+            "nativeName": {
+                "ara": {
+                    "official": "المملكة الأردنية الهاشمية",
+                    "common": "الأردن"
+                }
+            }
+        },
+        "cca2": "JO",
+        "cca3": "JOR"
+    },
+    {
+        "name": {
+            "common": "Iraq",
+            "official": "Republic of Iraq",
+            "nativeName": {
+                "ara": {
+                    "official": "جمهورية العراق",
+                    "common": "العراق"
+                },
+                "arc": {
+                    "official": "ܩܘܼܛܢܵܐ ܐܝܼܪܲܩ",
+                    "common": "ܩܘܼܛܢܵܐ"
+                },
+                "ckb": {
+                    "official": "کۆماری عێراق",
+                    "common": "کۆماری"
+                }
+            }
+        },
+        "cca2": "IQ",
+        "cca3": "IRQ"
+    },
+    {
+        "name": {
+            "common": "Bangladesh",
+            "official": "People's Republic of Bangladesh",
+            "nativeName": {
+                "ben": {
+                    "official": "বাংলাদেশ গণপ্রজাতন্ত্রী",
+                    "common": "বাংলাদেশ"
+                }
+            }
+        },
+        "cca2": "BD",
+        "cca3": "BGD"
+    },
+    {
+        "name": {
+            "common": "Kyrgyzstan",
+            "official": "Kyrgyz Republic",
+            "nativeName": {
+                "kir": {
+                    "official": "Кыргыз Республикасы",
+                    "common": "Кыргызстан"
+                },
+                "rus": {
+                    "official": "Кыргызская Республика",
+                    "common": "Киргизия"
+                }
+            }
+        },
+        "cca2": "KG",
+        "cca3": "KGZ"
+    },
+    {
+        "name": {
+            "common": "Belarus",
+            "official": "Republic of Belarus",
+            "nativeName": {
+                "bel": {
+                    "official": "Рэспубліка Беларусь",
+                    "common": "Белару́сь"
+                },
+                "rus": {
+                    "official": "Республика Беларусь",
+                    "common": "Беларусь"
+                }
+            }
+        },
+        "cca2": "BY",
+        "cca3": "BLR"
+    },
+    {
+        "name": {
+            "common": "Iran",
+            "official": "Islamic Republic of Iran",
+            "nativeName": {
+                "fas": {
+                    "official": "جمهوری اسلامی ایران",
+                    "common": "ایران"
+                }
+            }
+        },
+        "cca2": "IR",
+        "cca3": "IRN"
+    }
+]

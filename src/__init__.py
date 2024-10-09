@@ -10,6 +10,8 @@ from flask import Flask  # Importa la clase Flask
 from flask_cors import CORS
 # Importa las rutas del módulo CoordinatesRoutes
 from src.routes import CoordinatesRoutes
+# Importa las rutas del módulo IsoRoiso_blueprint
+from src.routes import iso_blueprint
 
 # Instancia la aplicación Flask
 app = Flask(__name__)
@@ -29,6 +31,10 @@ def init_app():
         # Registra el blueprint del módulo CoordinatesRoutes bajo el prefijo '/coordinates'
         app.register_blueprint(CoordinatesRoutes.main,
                                url_prefix='/coordinates')
+
+        # Registra el blueprint del módulo IsoRoutes bajo el prefijo '/iso'
+        app.register_blueprint(iso_blueprint.main,
+                               url_prefix='/iso')
 
         return app  # Devuelve la instancia de Flask configurada
     except Exception as e:

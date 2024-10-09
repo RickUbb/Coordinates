@@ -30,18 +30,20 @@ def get_coordinates_from_data(data, addresstype):
         return filtered_data['lat'], filtered_data['lon'], filtered_data["display_name"]
     else:
         if addresstype == "city":
+            # Buscar en el orden de prioridad para ciudades
             filtered_data = next((obj for obj in data if obj.get('addresstype') in [
-                                 'municipality', 'town']), None)
+                'city', 'town', 'municipality', 'suburb', 'residential']), None)
             if filtered_data:
-                return filtered_data['lat'], filtered_data['lon'], filtered_data["display_name"]
+                return filtered_data['lat'], filtered_data['lon'], filtered_data["display_name"] if addresstype == "" else None
 
-        elif addresstype == "state":
-            filtered_data = next((obj for obj in data if obj.get('addresstype') in [
-                                 'administrative', 'county']), None)
-            if filtered_data:
-                return filtered_data['lat'], filtered_data['lon'], filtered_data["display_name"]
+            elif addresstype == "state":
+                # Buscar en el orden de prioridad para estados
+                filtered_data = next((obj for obj in data if obj.get('addresstype') in [
+                    'state', 'province', 'administrative', 'county']), None)
+                if filtered_data:
+                    return filtered_data['lat'], filtered_data['lon'], filtered_data["display_name"]
 
-    return None, None, None
+                return None, None, None
 
 
 def get_coordinates_osm(direction: str, subnivel: int, country_exist: bool):
@@ -134,16 +136,19 @@ def obtener_coordenadas(db, collection_name, country: str, province: str, city: 
         return None, None, None, None
 
     # Agregar coordenadas a la base de datos si country_exist
-    if country_exist and country != "NA":
+    """"if country_exist and country != "NA":
         add_one_coordinate(db, collection_name, country, province, city,
                            province_lat, province_lon, city_lat, city_lon)
+    else:"""
+    if _ is not None:
+        display_name_parts = _.rsplit(', ')
+        country = display_name_parts[-1]
+    # elif country_exist and country != "NA":
+    elif country_exist and country != "NA":
+        country = country
     else:
-        if _ is not None:
-            display_name_parts = _.rsplit(', ')
-            country = display_name_parts[-1]
-        else:
-            country = "No disponible"
-        add_one_coordinate(db, collection_name, country, province, city,
-                           province_lat, province_lon, city_lat, city_lon)
+        country = "No disponible"
+    add_one_coordinate(db, collection_name, country, province, city,
+                       province_lat, province_lon, city_lat, city_lon)
 
     return province_lat, province_lon, city_lat, city_lon
