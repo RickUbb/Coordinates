@@ -15,18 +15,34 @@ from flask_cors import cross_origin
 from src.services.coordinates_api import obtener_coordenadas
 # Función para normalizar texto
 from src.utils.functions.normalize_text import normalize
+# Importar funciones de la base de datos
+from src.database.db_mongo import (
+    get_mongo_url,
+    get_mongo_db_name,
+    get_coordinates_collection_name,
+    get_coordinates_error_collection_name
+)
 from pymongo import MongoClient  # Para manejar la conexión con MongoDB
-# Archivo de configuración para obtener los detalles de MongoDB
-from config import mongo
+import logging
 
 # Crear un blueprint de Flask para las rutas relacionadas con las coordenadas
 main = Blueprint('coordinates_blueprint', __name__)
 
-# Configuración de cliente y conexión a la base de datos MongoDB
-client = MongoClient(mongo['mongodb_url'])
-database_name = client[mongo['mongodb_db_name']]
-collection_name = mongo['mongodb_collection_name_coordinates']
-collection_error_name = mongo["mongodb_collection_name_error_coordinates"]
+# Obtener la configuración de MongoDB
+try:
+    mongo_url = get_mongo_url()
+    mongo_db_name = get_mongo_db_name()
+    collection_name = get_coordinates_collection_name()
+    collection_error_name = get_coordinates_error_collection_name()
+
+    # Configuración de cliente y conexión a la base de datos MongoDB
+    client = MongoClient(mongo_url)
+    database_name = client[mongo_db_name]
+    logging.info("Conexión a MongoDB establecida correctamente.")
+
+except Exception as e:
+    logging.error(f"Error al establecer conexión con MongoDB: {e}")
+    raise Exception("No se pudo conectar a la base de datos.") from e
 
 
 @cross_origin
@@ -103,9 +119,9 @@ def get_coordinates():
 
         except Exception as e:
             errors.append(
-                #    {"error": f"Error al procesar el objeto {obj}: {str(e)}"})
-                {"error": f"Error al procesar el objeto {obj}. Ocurrió un problema al intentar obtener las coordenadas. Detalles del error: {str(e)}"})
-
+                {"error": f"Error al procesar el objeto {
+                    obj}. Ocurrió un problema al intentar obtener las coordenadas. Detalles del error: {str(e)}"}
+            )
             continue
 
     # Retornar los resultados y los errores

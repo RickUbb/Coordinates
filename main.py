@@ -8,6 +8,7 @@ correctamente la aplicación Flask.
 """
 
 from src import init_app  # Importa la función init_app desde el módulo src
+import sys
 
 
 def initialize_app():
@@ -35,6 +36,7 @@ if __name__ == '__main__':
     try:
         app = initialize_app()  # Inicializa la aplicación Flask
         # Ejecuta la aplicación en modo debug (solo en desarrollo)
-        app.run(debug=True)
+        app.run(host='0.0.0.0', port=5000, debug=False)  # Cambia aquí
     except Exception as e:
-        print(f"Error al iniciar el servidor Flask: {e}")
+        print(f"Error al iniciar el servidor Flask: {
+              e}", file=sys.stderr)  # Registrar error en stderr

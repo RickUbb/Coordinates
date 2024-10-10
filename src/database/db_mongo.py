@@ -6,76 +6,84 @@ y sus colecciones, como la colección de coordenadas. Utiliza la biblioteca `pym
 y los detalles de configuración se encuentran en el archivo `config.py`.
 """
 
-from pymongo import MongoClient
-from pymongo.errors import ConnectionFailure, ConfigurationError
 from config import mongo
 import logging
 
 # Configuración básica del logger para capturar errores
-logging.basicConfig(level=logging.ERROR,
+logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 
-def get_database():
+def get_mongo_url() -> str:
     """
-    Establece una conexión con la base de datos MongoDB y retorna la instancia de la base de datos.
-
-    Esta función utiliza el cliente de MongoDB (`MongoClient`) para conectarse a la base de datos usando la URL
-    y el nombre de la base de datos definidos en el archivo de configuración.
+    Obtiene la URL de conexión a MongoDB desde la configuración.
 
     Returns:
-        database (Database): La instancia de la base de datos configurada en el archivo de configuración.
+        str: URL de conexión a MongoDB.
+
+    Raises:
+        KeyError: Si la clave 'mongodb_url' no está presente en la configuración.
     """
     try:
-        client = MongoClient(mongo['mongodb_url'])
-        database = client[mongo['mongodb_db_name']]
-        return database
-    except (ConnectionFailure, ConfigurationError) as e:
-        logging.error(f"Error al conectar con la base de datos MongoDB: {e}")
-        return None
+        return mongo['mongodb_url']
+    except KeyError:
+        logging.error(
+            "La clave 'mongodb_url' no se encuentra en la configuración.")
+        raise
 
 
-def get_coordinates_collection():
+def get_mongo_db_name() -> str:
     """
-    Obtiene la colección de coordenadas desde la base de datos MongoDB.
-
-    Llama a la función `get_database` para establecer la conexión con la base de datos y luego accede a la colección
-    de coordenadas que está configurada bajo el nombre `mongodb_collection_name_coordinates` en el archivo de configuración.
+    Obtiene el nombre de la base de datos desde la configuración.
 
     Returns:
-        collection (Collection): La colección de coordenadas dentro de la base de datos.
+        str: Nombre de la base de datos.
+
+    Raises:
+        KeyError: Si la clave 'mongodb_db_name' no está presente en la configuración.
     """
-    database = get_database()
-    if database:
-        try:
-            collection = database[mongo['mongodb_collection_name_coordinates']]
-            return collection
-        except KeyError as e:
-            logging.error(f"Error al acceder a la colección: {e}")
-            return None
-    else:
-        logging.error("No se pudo obtener la base de datos.")
-        return None
+    try:
+        return mongo['mongodb_db_name']
+    except KeyError:
+        logging.error(
+            "La clave 'mongodb_db_name' no se encuentra en la configuración.")
+        raise
 
 
-def get_coordinates_error_collection():
+def get_coordinates_collection_name() -> str:
     """
-    Obtiene la colección de coordenadas con errores desde la base de datos MongoDB.
-
-    Llama a la función `get_database` para establecer la conexión con la base de datos y luego accede a la colección
-    de coordenadas que está configurada bajo el nombre `mongodb_collection_name_coordinates` en el archivo de configuración.
+    Obtiene el nombre de la colección de coordenadas desde la configuración.
 
     Returns:
-        collection (Collection): La colección de coordenadas dentro de la base de datos.
+        str: Nombre de la colección de coordenadas.
+
+    Raises:
+        KeyError: Si la clave 'mongodb_collection_name_coordinates' no está presente en la configuración.
     """
-    database = get_database()
-    if database:
-        try:
-            collection = database[mongo['mongodb_collection_name_error_coordinates']]
-            return collection
-        except KeyError as e:
-            logging.error(f"Error al acceder a la colección: {e}")
-            return None
-    else:
-        logging.error("No se pudo obtener la base de datos.")
-        return None
+    try:
+        name = mongo['mongodb_collection_name_coordinates']
+        logging.info(f"Nombre de la colección de coordenadas: {
+                     name}")  # Registro informativo
+        return name
+    except KeyError:
+        logging.error(
+            "La clave 'mongodb_collection_name_coordinates' no se encuentra en la configuración.")
+        raise
+
+
+def get_coordinates_error_collection_name() -> str:
+    """
+    Obtiene el nombre de la colección de coordenadas con errores desde la configuración.
+
+    Returns:
+        str: Nombre de la colección de coordenadas con errores.
+
+    Raises:
+        KeyError: Si la clave 'mongodb_collection_name_error_coordinates' no está presente en la configuración.
+    """
+    try:
+        return mongo['mongodb_collection_name_error_coordinates']
+    except KeyError:
+        logging.error(
+            "La clave 'mongodb_collection_name_error_coordinates' no se encuentra en la configuración.")
+        raise

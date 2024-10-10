@@ -1,0 +1,15 @@
+networks:
+  coordinates_network:
+    driver: bridge
+
+services:
+  app:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+    networks:
+      - coordinates_network

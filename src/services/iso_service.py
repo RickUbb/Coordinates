@@ -1,3 +1,14 @@
+"""
+iso_service.py
+
+Este módulo proporciona las funciones necesarias para obtener los códigos ISO 3166-1 de un país, 
+ya sea localmente desde un archivo JSON o consultando una API externa. También se incluyen 
+funciones para traducir nombres de países, guardar nuevos registros en el archivo local, 
+y manejar posibles errores en las solicitudes.
+
+Se utiliza `deep_translator` para traducir nombres de países cuando es necesario.
+"""
+
 import requests
 import json
 import os
@@ -20,7 +31,6 @@ def translate_country_name(country, target_language):
         translator = GoogleTranslator(source='auto', target=target_language)
         # Traducir el nombre del país
         translation = translator.translate(country)
-        # Devolver la traducción si existe, de lo contrario None
         return translation if translation else None
     except Exception as e:
         # Imprimir el error si ocurre una excepción durante la traducción
@@ -44,7 +54,7 @@ def find_country_in_data(country, data):
 
     # Iterar sobre cada entrada en los datos locales
     for entry in data:
-        # Verificar el nombre común en el campo 'name'
+        # Verificar el nombre común en el campo 'common'
         if entry['name']['common'].strip().lower() == country_lower:
             return {'cca2': entry['cca2'], 'cca3': entry['cca3']}
 
@@ -76,9 +86,7 @@ def search_country_in_api(country):
 
         # Si la respuesta es exitosa (código 200)
         if response.status_code == 200:
-            # Parsear la respuesta JSON
             country_data = response.json()
-            # Convertir el nombre del país a minúsculas y eliminar espacios en blanco
             country_lower = country.strip().lower()
 
             # Iterar sobre los datos del país en la respuesta de la API
@@ -86,12 +94,13 @@ def search_country_in_api(country):
                 # Verificar el nombre común en el campo 'name'
                 if item['name']['common'].strip().lower() == country_lower:
                     return item
+
                 # Verificar en el campo 'nativeName'
                 native_names = item['name'].get('nativeName', {})
                 for names in native_names.values():
                     if names['common'].strip().lower() == country_lower:
                         return item
-        # Devolver None si no se encuentra el país en la API
+
         return None
     except requests.RequestException as e:
         # Imprimir el error si ocurre una excepción durante la solicitud a la API
@@ -148,12 +157,9 @@ def get_iso_from_country(country):
         if exact_match:
             # Crear una nueva entrada con los datos del país encontrado
             new_entry = {
-                'name': exact_match['name'],
-                'cca2': exact_match['cca2'],
-                'cca3': exact_match['cca3'],
-            }
+                'name': exact_match['name'], 'cca2': exact_match['cca2'], 'cca3': exact_match['cca3']}
 
-            # Verificar nuevamente antes de agregar al archivo JSON
+            # Guardar la nueva entrada en el archivo local si no está presente
             if not find_country_in_data(new_entry['name']['common'], data):
                 save_new_entry(data, storage_path, new_entry)
 
@@ -164,17 +170,10 @@ def get_iso_from_country(country):
         if translated_country:
             exact_match = search_country_in_api(translated_country)
             if exact_match:
-                # Crear una nueva entrada con los datos del país encontrado
                 new_entry = {
-                    'name': exact_match['name'],
-                    'cca2': exact_match['cca2'],
-                    'cca3': exact_match['cca3'],
-                }
-
-                # Verificar nuevamente antes de agregar al archivo JSON
+                    'name': exact_match['name'], 'cca2': exact_match['cca2'], 'cca3': exact_match['cca3']}
                 if not find_country_in_data(new_entry['name']['common'], data):
                     save_new_entry(data, storage_path, new_entry)
-
                 return {'cca2': new_entry['cca2'], 'cca3': new_entry['cca3']}
 
         # Intentar con traducción al español
@@ -182,22 +181,13 @@ def get_iso_from_country(country):
         if translated_country:
             exact_match = search_country_in_api(translated_country)
             if exact_match:
-                # Crear una nueva entrada con los datos del país encontrado
                 new_entry = {
-                    'name': exact_match['name'],
-                    'cca2': exact_match['cca2'],
-                    'cca3': exact_match['cca3'],
-                }
-
-                # Verificar nuevamente antes de agregar al archivo JSON
+                    'name': exact_match['name'], 'cca2': exact_match['cca2'], 'cca3': exact_match['cca3']}
                 if not find_country_in_data(new_entry['name']['common'], data):
                     save_new_entry(data, storage_path, new_entry)
-
                 return {'cca2': new_entry['cca2'], 'cca3': new_entry['cca3']}
 
-        # Devolver un mensaje de error si no se encuentra el país en la API
         return {'error': 'Country not found in external API'}
 
     except Exception as e:
-        # Devolver un mensaje de error si ocurre una excepción
         return {'error': f'An error occurred: {str(e)}'}
