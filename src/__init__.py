@@ -1,7 +1,7 @@
 """
 __init__.py
 
-Este archivo inicializa la aplicación Flask y registra los blueprints. 
+Este archivo inicializa la aplicación Flask y registra los blueprints.
 También habilita el soporte de CORS para permitir solicitudes desde dominios externos.
 """
 
@@ -11,6 +11,7 @@ from flask_cors import CORS
 # Importa las rutas del módulo CoordinatesRoutes
 from src.routes import CoordinatesRoutes
 from src.routes import iso_blueprint  # Importa las rutas del módulo IsoRoutes
+from src.routes import coordinates_kafka_routes
 
 # Instancia la aplicación Flask
 app = Flask(__name__)
@@ -34,6 +35,8 @@ def init_app():
         # Registra el blueprint del módulo IsoRoutes bajo el prefijo '/iso'
         app.register_blueprint(iso_blueprint.main, url_prefix='/iso')
 
+        app.register_blueprint(
+            coordinates_kafka_routes.kafka_routes, url_prefix='/kafka')
         return app  # Devuelve la instancia de Flask configurada
     except Exception as e:
         # Manejo de errores en caso de fallo al registrar rutas o inicializar la app
