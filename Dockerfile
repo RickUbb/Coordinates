@@ -20,5 +20,5 @@ EXPOSE 5000
 ENV FLASK_APP=main.py
 ENV FLASK_ENV=development
 
-# Comando para correr la aplicación
-CMD ["python", "main.py"]
+# Comando para correr la aplicación Flask y el consumidor de Kafka
+CMD ["sh", "-c", "python main.py & python src/services/kafka_consumer.py"]

@@ -8,6 +8,7 @@ correctamente la aplicación Flask.
 """
 
 from src import init_app  # Importa la función init_app desde el módulo src
+
 import sys
 
 
