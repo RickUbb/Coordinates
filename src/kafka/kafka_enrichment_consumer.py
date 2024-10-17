@@ -7,7 +7,7 @@ El módulo se suscribe a un tópico específico en Kafka y deserializa los mensa
 JSON. Los mensajes deben contener los campos 'id' y 'type' para su procesamiento adecuado. 
 
 Funciones principales:
-- `process_message(id_value, type_value)`: Procesa un mensaje de Kafka dado su ID y tipo.
+- `process_message(id_value, collection_value)`: Procesa un mensaje de Kafka dado su ID y tipo.
 - `consume_messages()`: Escucha continuamente el tópico de Kafka para consumir mensajes y 
   manejar su procesamiento.
 """
@@ -18,7 +18,10 @@ import logging  # Importa el módulo logging para registrar eventos
 # Importa la clase Consumer de la biblioteca confluent_kafka
 from confluent_kafka import Consumer
 # Importa la función para procesar mensajes
-from src.utils.functions.kafka_coordinates import process_kafka_message
+from src.services.kafka_dp import process_kafka_message
+# Importa la función para obtener la colección
+from src.utils.functions.kafka_coordinates import get_collection_from_type
+from config import kafka  # Importa la configuración de Kafka
 
 # Configuración del logging
 # Establece el nivel de logging a DEBUG
@@ -27,49 +30,45 @@ logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
 # Define el tópico de Kafka
-KAFKA_TOPIC = 'to-enrich-lat-lon'
-# Obtiene la dirección de los servidores de Kafka desde las variables de entorno o establece un valor predeterminado
-KAFKA_BOOTSTRAP_SERVERS = os.getenv(
-    'KAFKA_BOOTSTRAP_SERVERS', 'localhost:9092')
+KAFKA_TOPIC = kafka['kafka_topic']  # Asigna el tópico de Kafka a una variable
 
 # Inicializa el consumidor de Kafka con la configuración especificada
 consumer = Consumer({
     # Dirección de los servidores de Kafka
-    'bootstrap.servers': KAFKA_BOOTSTRAP_SERVERS,
-    'group.id': 'coordinates-group',  # Identificador del grupo de consumidores
+    'bootstrap.servers': kafka['kafka_bootstrap_servers'],
+    'group.id': kafka['group_id'],  # Identificador del grupo de consumidores
     # Configuración para leer los mensajes desde el principio
-    'auto.offset.reset': 'earliest'
+    'auto.offset.reset': kafka['kafka_auto_offset_reset']
 })
 
 # Suscribe el consumidor al tópico definido
 consumer.subscribe([KAFKA_TOPIC])
 
 
-def process_message(id_value, type_value):
+def process_message(id_value, collection_value):
     """
-    Procesa un mensaje de Kafka dado su ID y tipo.
+    Procesa un mensaje de Kafka dado su ID y el nombre de la colección correspondiente.
 
     Args:
         id_value (str): El ID del documento que se va a procesar.
-        type_value (str): El tipo del documento que se va a procesar.
+        collection_value (str): El nombre de la colección que se va a procesar.
 
     Raises:
         Exception: Si ocurre un error durante el procesamiento del mensaje.
     """
-    logger.debug(f"Procesando mensaje con id: {id_value} y type: {
-                 type_value}")  # Log de depuración
+    logger.debug(f"Procesando mensaje con id: {id_value} de la colección: {
+                 collection_value}")  # Log de depuración
     try:
         # Llama a la función para procesar el mensaje
-        process_kafka_message(id_value, type_value)
+        process_kafka_message(id_value, collection_value)
     except Exception as e:
-        logger.error(f"Error al procesar el mensaje con id {id_value} y type {
-                     type_value}: {e}")  # Log de error si hay una excepción
+        logger.error(f"Error al procesar el mensaje con id {id_value} y colección {
+                     collection_value}: {e}")  # Log de error si hay una excepción
 
 
 def consume_messages():
     """
-    Escucha continuamente el tópico de Kafka para consumir mensajes 
-    y manejar su procesamiento.
+    Escucha continuamente el tópico de Kafka para consumir mensajes y manejar su procesamiento.
 
     Raises:
         Exception: Si ocurre un error inesperado durante la deserialización o procesamiento del mensaje.
@@ -94,11 +93,14 @@ def consume_messages():
             logger.debug(f"Datos deserializados: {
                          message_data}")  # Log de depuración
 
-            # Verifica que el mensaje contenga los campos 'id' y 'type'
+            # Verifica que el mensaje contenga los campos necesarios
             if 'id' in message_data and 'type' in message_data:
                 id_value = message_data['id']  # Extrae el ID del mensaje
                 type_value = message_data['type']  # Extrae el tipo del mensaje
-                process_message(id_value, type_value)  # Procesa el mensaje
+                collection_value = get_collection_from_type(
+                    type_value)  # Obtiene la colección correspondiente
+                # Procesa el mensaje
+                process_message(id_value, collection_value)
             else:
                 # Log de advertencia si faltan campos
                 logger.warning(

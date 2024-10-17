@@ -19,3 +19,12 @@ mongo = {
     # Nombre de la colección de errores
     'mongodb_collection_name_error_coordinates': config('MONGODB_COLLECTION_NAME_ERROR_COORDINATES', default='coordinatesErrors')
 }
+
+kafka = {
+    'kafka_topic': config("KAFKA_TOPIC", default='to-enrich-lat-lon'),
+    'kafka_bootstrap_servers': config("KAFKA_BOOTSTRAP_SERVERS", default='localhost:9092'),
+    'group_id': config("GROUP_ID", default='coordinates-group'),
+    'kafka_auto_offset_reset': config("KAFKA_AUTO_OFFSET_RESET", default='earliest'),
+    'kafka_enable_auto_commit': config("KAFKA_ENABLE_AUTO_COMMIT", default="True"),
+    'api_endpoint': config("API_ENDPOINT", default="http://app:5000/coordinates/")
+}
