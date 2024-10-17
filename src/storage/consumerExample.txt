@@ -1,0 +1,185 @@
+2024-10-16 12:23:54  * Serving Flask app 'src'
+2024-10-16 12:23:54  * Debug mode: off
+2024-10-16 12:25:19 Mensaje recibido: {"id":"550591560463498"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '550591560463498'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"1337937920301361"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '1337937920301361'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"1460000468136992"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '1460000468136992'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"909248273712485"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '909248273712485'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"255466340290856"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '255466340290856'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"726546395701735"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '726546395701735'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"748853390362717"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '748853390362717'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"3308909036016197"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '3308909036016197'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"378936906974941"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '378936906974941'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"546841860497851"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '546841860497851'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"907327940449027"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '907327940449027'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"929274105111141"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '929274105111141'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"548355457354083"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '548355457354083'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"1284607012095659"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '1284607012095659'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"661244179148162"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '661244179148162'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"1261145231413760"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '1261145231413760'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"2066744373523341"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '2066744373523341'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"903551637574757"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '903551637574757'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"1005217253769788"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '1005217253769788'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"1418982852269575"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '1418982852269575'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"3596897037263699"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '3596897037263699'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"761596878687593"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '761596878687593'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"587665319801362"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '587665319801362'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"1166584140632056"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '1166584140632056'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"1468589710334102"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '1468589710334102'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"863296858256260"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '863296858256260'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"482054633887596"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '482054633887596'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"853933935663556"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '853933935663556'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"140985885465741"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '140985885465741'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"1253708975243683"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '1253708975243683'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"409834901335924"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '409834901335924'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"753667252298433"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '753667252298433'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"1513343882493382"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '1513343882493382'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"874625056905803"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '874625056905803'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"584049313545441"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '584049313545441'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"572338058077881"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '572338058077881'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"693634512473493"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '693634512473493'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"512063147678757"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '512063147678757'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"1643281239421350"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '1643281239421350'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"676461187551661"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '676461187551661'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"1258515768348441"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '1258515768348441'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"859850278672587"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '859850278672587'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"1206912863544080"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '1206912863544080'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"528931035967326"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '528931035967326'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"1214659925793388"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '1214659925793388'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"523831586513868"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '523831586513868'}
+2024-10-16 12:23:54 2024-10-16 17:23:54,624 - INFO - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+2024-10-16 12:23:54  * Running on all addresses (0.0.0.0)
+2024-10-16 12:23:54  * Running on http://127.0.0.1:5000
+2024-10-16 12:23:54  * Running on http://172.23.0.4:5000
+2024-10-16 12:23:54 2024-10-16 17:23:54,625 - INFO - Press CTRL+C to quit
+2024-10-16 12:25:19 Mensaje recibido: {"id":"927905224885119"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '927905224885119'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"506591474930732"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '506591474930732'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"696724958653948"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '696724958653948'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"878341766748096"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '878341766748096'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"3293128570947161"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '3293128570947161'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"1295090374395897"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '1295090374395897'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"195231916725193"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '195231916725193'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"1034255870875067"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '1034255870875067'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"484062313801732"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '484062313801732'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"908537010586897"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '908537010586897'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"751594116453634"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '751594116453634'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"681374660396197"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '681374660396197'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"889691722372844"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '889691722372844'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"928884195160196"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '928884195160196'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"910142136822746"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '910142136822746'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"707071620980846"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '707071620980846'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"2109028045954316"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '2109028045954316'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"555459803133670"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '555459803133670'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"260525283075446"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '260525283075446'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"707213437627604"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '707213437627604'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"953161135819316"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '953161135819316'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"622074849457741"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '622074849457741'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"847987853098498"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '847987853098498'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"891967381851365"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '891967381851365'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"671889558007587"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '671889558007587'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"554415806872805"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '554415806872805'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"1540586026408149"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '1540586026408149'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"2124639694412050"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '2124639694412050'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"884403059257074"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '884403059257074'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"635429265049792"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '635429265049792'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"735115694938215"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '735115694938215'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"1172987956674239"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '1172987956674239'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"1796766974036045"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '1796766974036045'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"707849414135923"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '707849414135923'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"505148418462009"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '505148418462009'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"719923543214746"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '719923543214746'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"3781068998589962"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '3781068998589962'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"888634109226170"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '888634109226170'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"925282878460760"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '925282878460760'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"1113296186129189"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '1113296186129189'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"1106605090015768"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '1106605090015768'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"604747414953039"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '604747414953039'}
+2024-10-16 12:25:19 Mensaje recibido: {"id":"713929587002132"}
+2024-10-16 12:25:19 Datos deserializados: {'id': '713929587002132'}

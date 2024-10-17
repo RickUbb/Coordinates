@@ -1,0 +1,200 @@
+        "region_distri": [
+            {
+                "percentage": 0.000468,
+                "region": "Quito | Province",
+                "lat": "-0.1692388",
+                "lon": "-78.50431437255514"
+            },
+            {
+                "percentage": 0.003396,
+                "region": "Morelos | Province",
+                "lat": "18.75",
+                "lon": "-99.0"
+            },
+            {
+                "percentage": 0.002342,
+                "region": "Yucatán | Province",
+                "lat": "20.6845957",
+                "lon": "-88.8755669"
+            },
+            {
+                "percentage": 0.00808,
+                "region": "Veracruz | Province",
+                "lat": "19.333333",
+                "lon": "-96.666667"
+            },
+            {
+                "percentage": 0.004918,
+                "region": "Tlaxcala | Province",
+                "lat": "19.416667",
+                "lon": "-98.166667"
+            },
+            {
+                "percentage": 0.005269,
+                "region": "Tamaulipas | Province",
+                "lat": "23.9891553",
+                "lon": "-98.7026825"
+            },
+            {
+                "percentage": 0.001991,
+                "region": "Tabasco | Province",
+                "lat": "17.9999288",
+                "lon": "-92.6681659"
+            },
+            {
+                "percentage": 0.003513,
+                "region": "Sonora | Province",
+                "lat": "29.3333331",
+                "lon": "-110.6666671"
+            },
+            {
+                "percentage": 0.002459,
+                "region": "Sinaloa | Province",
+                "lat": "25.0000001",
+                "lon": "-107.5000001"
+            },
+            {
+                "percentage": 0.007611,
+                "region": "San Luis Potosi | Province",
+                "lat": "22.5000001",
+                "lon": "-100.4949145"
+            },
+            {
+                "percentage": 0.001405,
+                "region": "Quintana Roo | Province",
+                "lat": "19.6666671",
+                "lon": "-88.5000001"
+            },
+            {
+                "percentage": 0.005269,
+                "region": "Querétaro Arteaga | Province",
+                "lat": "22.1498200",
+                "lon": "-100.9791600"
+            },
+            {
+                "percentage": 0.010539,
+                "region": "Puebla | Province",
+                "lat": "22.1498200",
+                "lon": "-100.9791600"
+            },
+            {
+                "percentage": 0.005504,
+                "region": "Oaxaca | Province",
+                "lat": "22.1498200",
+                "lon": "-100.9791600"
+            },
+            {
+                "percentage": 0.004215,
+                "region": "Nuevo León | Province",
+                "lat": "22.1498200",
+                "lon": "-100.9791600"
+            },
+            {
+                "percentage": 0.004098,
+                "region": "Nayarit | Province",
+                "lat": "22.1498200",
+                "lon": "-100.9791600"
+            },
+            {
+                "percentage": 0.007494,
+                "region": "Michoacán de Ocampo | Province",
+                "lat": "22.1498200",
+                "lon": "-100.9791600"
+            },
+            {
+                "percentage": 0.735714,
+                "region": "Aguascalientes | Province",
+                "lat": "22.1498200",
+                "lon": "-100.9791600"
+            },
+            {
+                "percentage": 0.025761,
+                "region": "State of Mexico | Province",
+                "lat": "22.1498200",
+                "lon": "-100.9791600"
+            },
+            {
+                "percentage": 0.015808,
+                "region": "Jalisco | Province",
+                "lat": "22.1498200",
+                "lon": "-100.9791600"
+            },
+            {
+                "percentage": 0.011124,
+                "region": "Hidalgo | Province",
+                "lat": "22.1498200",
+                "lon": "-100.9791600"
+            },
+            {
+                "percentage": 0.005386,
+                "region": "Guerrero | Province",
+                "lat": "22.1498200",
+                "lon": "-100.9791600"
+            },
+            {
+                "percentage": 0.018033,
+                "region": "Guanajuato | Province",
+                "lat": "22.1498200",
+                "lon": "-100.9791600"
+            },
+            {
+                "percentage": 0.003747,
+                "region": "Durango | Province",
+                "lat": "22.1498200",
+                "lon": "-100.9791600"
+            },
+            {
+                "percentage": 0.01534,
+                "region": "Distrito Federal | Province",
+                "lat": "22.1498200",
+                "lon": "-100.9791600"
+            },
+            {
+                "percentage": 0.000937,
+                "region": "Colima | Province",
+                "lat": "22.1498200",
+                "lon": "-100.9791600"
+            },
+            {
+                "percentage": 0.005504,
+                "region": "Coahuila de Zaragoza | Province",
+                "lat": "22.1498200",
+                "lon": "-100.9791600"
+            },
+            {
+                "percentage": 0.007026,
+                "region": "Chihuahua | Province",
+                "lat": "22.1498200",
+                "lon": "-100.9791600"
+            },
+            {
+                "percentage": 0.00363,
+                "region": "Chiapas | Province",
+                "lat": "22.1498200",
+                "lon": "-100.9791600"
+            },
+            {
+                "percentage": 0.001054,
+                "region": "Campeche | Province",
+                "lat": "22.1498200",
+                "lon": "-100.9791600"
+            },
+            {
+                "percentage": 0.001171,
+                "region": "Baja California Sur | Province",
+                "lat": "22.1498200",
+                "lon": "-100.9791600"
+            },
+            {
+                "percentage": 0.003864,
+                "region": "Baja California | Province",
+                "lat": "22.1498200",
+                "lon": "-100.9791600"
+            },
+            {
+                "percentage": 0.06733,
+                "region": "Zacatecas | Province",
+                "lat": "22.1498200",
+                "lon": "-100.9791600"
+            }
+        ]
