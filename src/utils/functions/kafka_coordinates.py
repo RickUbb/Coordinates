@@ -39,7 +39,7 @@ except Exception as e:
 COLLECTION_MAP = {
     "dp": "darkPostsFinal",
     "dpt": "darkPostTermsFinal",
-    "insi": "IndiviInsiFb"
+    "insi": "indvInsightsFb"
 }
 
 # Diccionario que mapea los valores del campo "region" a los parámetros de la API

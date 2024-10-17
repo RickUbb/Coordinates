@@ -55,6 +55,7 @@ services:
       - "5000:5000"
     environment:
       FLASK_APP: main.py
+      #KAFKA_BOOTSTRAP_SERVERS: 51.158.54.173:9292
       KAFKA_BOOTSTRAP_SERVERS: kafka:9092
     depends_on:
       kafka:

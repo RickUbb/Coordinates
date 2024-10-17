@@ -12,7 +12,6 @@ Funciones principales:
   así como la interacción con la API de coordenadas.
 """
 
-
 import logging
 from src.utils.functions.kafka_coordinates import (
     fetch_document_by_id,
@@ -20,6 +19,15 @@ from src.utils.functions.kafka_coordinates import (
     call_coordinates_api,
     update_region_data_in_document,
     db,
+)
+
+# Configuración del logger para capturar desde nivel WARNING
+logging.basicConfig(
+    level=logging.WARNING,  # Captura WARNING y superiores (ERROR, CRITICAL)
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.StreamHandler()  # Asegura que los mensajes se impriman en la consola (stdout)
+    ]
 )
 
 
@@ -51,7 +59,7 @@ def process_kafka_message(document_id, collection_value):
 
             if not region:
                 logging.warning(
-                    f"No se encontró el campo 'region' en el objeto: {region_obj}")
+                    f"[Documento ID: {document_id}] No se encontró el campo 'region' en el objeto: {region_obj}")
                 continue
 
             try:
@@ -60,7 +68,7 @@ def process_kafka_message(document_id, collection_value):
 
                 if not region_data:
                     logging.warning(
-                        f"No se pudo procesar los datos de región: {region}")
+                        f"[Documento ID: {document_id}] No se pudo procesar los datos de región: {region}")
                     continue
 
                 # Llama a la API de coordenadas con los datos de la región
@@ -68,7 +76,7 @@ def process_kafka_message(document_id, collection_value):
 
                 if not api_response:
                     logging.warning(
-                        f"No se recibió respuesta de la API para la región: {region}")
+                        f"[Documento ID: {document_id}] No se recibió respuesta de la API para la región: {region}")
                     continue
 
                 # Extrae las nuevas coordenadas de la respuesta de la API
@@ -78,8 +86,8 @@ def process_kafka_message(document_id, collection_value):
                     'lon_subnivel_4') or api_response.get('lon_subnivel_3')
 
                 if new_lat is None or new_lon is None:
-                    logging.warning(f"Coordenadas no válidas para la región: {
-                                    region}. lat={new_lat}, lon={new_lon}")
+                    logging.warning(
+                        f"[Documento ID: {document_id}] Coordenadas no válidas para la región: {region}. lat={new_lat}, lon={new_lon}")
                     continue
 
                 # Obtiene el nombre de la provincia o ciudad
@@ -88,7 +96,7 @@ def process_kafka_message(document_id, collection_value):
 
                 if not province:
                     logging.warning(
-                        f"No se encontró el campo 'province' o 'city' en los datos de la región: {region_data}")
+                        f"[Documento ID: {document_id}] No se encontró el campo 'province' o 'city' en los datos de la región: {region_data}")
                     continue
 
                 # Actualiza los datos de la región en el documento
@@ -97,23 +105,24 @@ def process_kafka_message(document_id, collection_value):
 
                 if not updated_document:
                     logging.warning(
-                        f"No se pudo actualizar el documento para la región: {region}")
+                        f"[Documento ID: {document_id}] No se pudo actualizar el documento para la región: {region}")
                     continue
 
                 # Actualiza el documento en MongoDB
                 try:
                     db[collection_value].update_one(
                         {"_id": document_id}, {"$set": updated_document})
-                    logging.info(f"Actualización exitosa para la región {
-                                 region}: lat={new_lat}, lon={new_lon}")
+                    logging.info(
+                        f"[Documento ID: {document_id}] Actualización exitosa para la región {region}: lat={new_lat}, lon={new_lon}")
                 except Exception as e:
-                    logging.error(f"Error al actualizar el documento en la base de datos para la región {
-                                  region}: {str(e)}")
+                    logging.error(
+                        f"[Documento ID: {document_id}] Error al actualizar el documento en la base de datos para la región {region}: {str(e)}")
 
             except Exception as e:
-                logging.error(
-                    f"Error durante el procesamiento de la región {region}: {e}")
+                logging.exception(
+                    f"[Documento ID: {document_id}] Error durante el procesamiento de la región {region}: {e}")
 
     except Exception as e:
-        logging.error(f"Error durante el procesamiento del mensaje: {e}")
+        logging.exception(
+            f"[Documento ID: {document_id}] Error durante el procesamiento del mensaje: {e}")
         raise
