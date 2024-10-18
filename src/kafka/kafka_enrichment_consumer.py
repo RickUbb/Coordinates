@@ -18,7 +18,8 @@ import logging  # Importa el módulo logging para registrar eventos
 # Importa la clase Consumer de la biblioteca confluent_kafka
 from confluent_kafka import Consumer
 # Importa la función para procesar mensajes
-from src.services.kafka_dp import process_kafka_message
+from src.services.kafka_dp import process_kafka_message_dp
+from src.services.kafka_ins import process_kafka_message_insi
 # Importa la función para obtener la colección
 from src.utils.functions.kafka_coordinates import get_collection_from_type
 from config import kafka  # Importa la configuración de Kafka
@@ -45,7 +46,7 @@ consumer = Consumer({
 consumer.subscribe([KAFKA_TOPIC])
 
 
-def process_message(id_value, collection_value):
+def process_message(id_value, collection_value, type_value):
     """
     Procesa un mensaje de Kafka dado su ID y el nombre de la colección correspondiente.
 
@@ -59,8 +60,15 @@ def process_message(id_value, collection_value):
     logger.debug(f"Procesando mensaje con id: {id_value} de la colección: {
                  collection_value}")  # Log de depuración
     try:
-        # Llama a la función para procesar el mensaje
-        process_kafka_message(id_value, collection_value)
+        if (type_value == "dp"):
+            process_kafka_message_dp(id_value, collection_value)
+
+        if (type_value == "dpt"):
+            process_kafka_message_dp(id_value, collection_value)
+
+        if (type_value == "insi"):
+            process_kafka_message_insi(id_value, collection_value)
+
     except Exception as e:
         logger.error(f"Error al procesar el mensaje con id {id_value} y colección {
                      collection_value}: {e}")  # Log de error si hay una excepción
@@ -100,7 +108,7 @@ def consume_messages():
                 collection_value = get_collection_from_type(
                     type_value)  # Obtiene la colección correspondiente
                 # Procesa el mensaje
-                process_message(id_value, collection_value)
+                process_message(id_value, collection_value, type_value)
             else:
                 # Log de advertencia si faltan campos
                 logger.warning(

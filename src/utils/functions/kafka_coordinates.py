@@ -38,7 +38,7 @@ except Exception as e:
 # Diccionario que mapea el "type" al nombre de la colección
 COLLECTION_MAP = {
     "dp": "darkPostsFinal",
-    "dpt": "darkPostTermsFinal",
+    "dpt": "darkPostsTermsFinal",
     "insi": "indvInsightsFb"
 }
 
@@ -212,4 +212,41 @@ def update_region_data_in_document(document, region, new_lat, new_lon):
     except Exception as e:
         logging.error(
             f"Error al actualizar los datos de la región en el documento: {e}")
+        raise
+
+
+def update_data_in_document(document, city, country, new_lat, new_lon):
+    """
+    Actualiza los datos de latitud y longitud para la región especificada en el documento.
+
+    Args:
+        document (dict): Documento de MongoDB que contiene los datos de la city.
+        new_lat (float): Nueva latitud.
+        new_lon (float): Nueva longitud.
+
+    Returns:
+        dict: Documento actualizado.
+
+    Raises:
+        ValueError: Si la región no se encuentra en el documento.
+        Exception: Si ocurre un error al actualizar los datos.
+    """
+    try:
+        updated = False
+
+        for region_obj in document.get('pageFansCity', []):
+            if city in region_obj['city'] and country in region_obj['country']:
+                region_obj['lat'] = new_lat
+                region_obj['lon'] = new_lon
+                updated = True
+
+        if not updated:
+            logging.error(f"No se encontró la city {
+                city} en el documento.")
+            raise ValueError(f"City {city} no encontrada.")
+
+        return document
+    except Exception as e:
+        logging.error(
+            f"Error al actualizar los datos de la city en el documento: {e}")
         raise

@@ -15,9 +15,8 @@ Funciones principales:
 import logging
 from src.utils.functions.kafka_coordinates import (
     fetch_document_by_id,
-    process_region_field,
     call_coordinates_api,
-    update_region_data_in_document,
+    update_data_in_document,
     db,
 )
 
@@ -31,7 +30,7 @@ logging.basicConfig(
 )
 
 
-def process_kafka_message_dp(document_id, collection_value):
+def process_kafka_message_insi(document_id, collection_value):
     """
     Procesa un mensaje de Kafka que contiene el ID del documento y el tipo de documento.
 
@@ -54,21 +53,22 @@ def process_kafka_message_dp(document_id, collection_value):
             raise ValueError(f"Documento con _id={document_id} no encontrado.")
 
         # Procesa cada objeto de región en el documento
-        for region_obj in document.get('region_distri', []):
-            region = region_obj.get('region')
+        for region_obj in document.get('pageFansCity', []):
+            city = region_obj.get('city')
+            country = region_obj.get('country')
 
-            if not region:
+            if not city:
                 logging.warning(
-                    f"[Documento ID: {document_id}] No se encontró el campo 'region' en el objeto: {region_obj}")
+                    f"[Documento ID: {document_id}] No se encontró el campo 'city' en el objeto: {region_obj}")
                 continue
 
             try:
                 # Procesa el campo de la región para obtener datos útiles
-                region_data = process_region_field(region)
+                region_data = {'city': city, 'contry': country}
 
                 if not region_data:
                     logging.warning(
-                        f"[Documento ID: {document_id}] No se pudo procesar los datos de región: {region}")
+                        f"[Documento ID: {document_id}] No se pudo procesar los datos de city: {city}")
                     continue
 
                 # Llama a la API de coordenadas con los datos de la región
@@ -76,18 +76,16 @@ def process_kafka_message_dp(document_id, collection_value):
 
                 if not api_response:
                     logging.warning(
-                        f"[Documento ID: {document_id}] No se recibió respuesta de la API para la región: {region}")
+                        f"[Documento ID: {document_id}] No se recibió respuesta de la API para la city: {city}")
                     continue
 
                 # Extrae las nuevas coordenadas de la respuesta de la API
-                new_lat = api_response.get(
-                    'lat_subnivel_4') or api_response.get('lat_subnivel_3')
-                new_lon = api_response.get(
-                    'lon_subnivel_4') or api_response.get('lon_subnivel_3')
+                new_lat = api_response.get('lat_subnivel_4')
+                new_lon = api_response.get('lon_subnivel_4')
 
                 if new_lat is None or new_lon is None:
                     logging.warning(
-                        f"[Documento ID: {document_id}] Coordenadas no válidas para la región: {region}. lat={new_lat}, lon={new_lon}")
+                        f"[Documento ID: {document_id}] Coordenadas no válidas para la city: {city}. lat={new_lat}, lon={new_lon}")
                     continue
 
                 # Obtiene el nombre de la provincia o ciudad
@@ -100,12 +98,12 @@ def process_kafka_message_dp(document_id, collection_value):
                     continue
 
                 # Actualiza los datos de la región en el documento
-                updated_document = update_region_data_in_document(
-                    document, province, new_lat, new_lon)
+                updated_document = update_data_in_document(
+                    document, city, country, new_lat, new_lon)
 
                 if not updated_document:
                     logging.warning(
-                        f"[Documento ID: {document_id}] No se pudo actualizar el documento para la región: {region}")
+                        f"[Documento ID: {document_id}] No se pudo actualizar el documento para la city: {city}")
                     continue
 
                 # Actualiza el documento en MongoDB
@@ -113,14 +111,14 @@ def process_kafka_message_dp(document_id, collection_value):
                     db[collection_value].update_one(
                         {"_id": document_id}, {"$set": updated_document})
                     logging.info(
-                        f"[Documento ID: {document_id}] Actualización exitosa para la región {region}: lat={new_lat}, lon={new_lon}")
+                        f"[Documento ID: {document_id}] Actualización exitosa para la city {city}: lat={new_lat}, lon={new_lon}")
                 except Exception as e:
                     logging.error(
-                        f"[Documento ID: {document_id}] Error al actualizar el documento en la base de datos para la región {region}: {str(e)}")
+                        f"[Documento ID: {document_id}] Error al actualizar el documento en la base de datos para la city {city}: {str(e)}")
 
             except Exception as e:
                 logging.exception(
-                    f"[Documento ID: {document_id}] Error durante el procesamiento de la región {region}: {e}")
+                    f"[Documento ID: {document_id}] Error durante el procesamiento de la city {city}: {e}")
 
     except Exception as e:
         logging.exception(

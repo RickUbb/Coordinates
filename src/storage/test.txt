@@ -1,7 +1,7 @@
         "region_distri": [
             {
                 "percentage": 0.000468,
-                "region": "Quito | Province",
+                "region": "Quito | City",
                 "lat": "-0.1692388",
                 "lon": "-78.50431437255514"
             },
@@ -13,13 +13,13 @@
             },
             {
                 "percentage": 0.002342,
-                "region": "Yucatán | Province",
+                "region": "Yucatán | State",
                 "lat": "20.6845957",
                 "lon": "-88.8755669"
             },
             {
                 "percentage": 0.00808,
-                "region": "Veracruz | Province",
+                "region": "Veracruz | Country",
                 "lat": "19.333333",
                 "lon": "-96.666667"
             },
