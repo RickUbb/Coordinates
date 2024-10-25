@@ -13,6 +13,7 @@ Funciones principales:
 """
 
 import logging
+from src.services.coordinates_api import get_coordinates_osm_direct
 from src.utils.functions.kafka_coordinates import (
     fetch_document_by_id,
     process_region_field,
@@ -63,50 +64,48 @@ def process_kafka_message_dp(document_id, collection_value):
                 continue
 
             try:
-                # Procesa el campo de la región para obtener datos útiles
-                region_data = process_region_field(region)
+                if " | " in region:
+                    # Procesa el campo de la región para obtener datos útiles
+                    region_data = process_region_field(region)
+                    # Llama a la API de coordenadas con los datos de la región
+                    api_response = call_coordinates_api(region_data)
 
-                if not region_data:
-                    logging.warning(
-                        f"[Documento ID: {document_id}] No se pudo procesar los datos de región: {region}")
-                    continue
+                    # Obtiene el nombre de la provincia o ciudad
+                    province = region_data.get(
+                        'province', '') or region_data.get('city', '')
 
-                # Llama a la API de coordenadas con los datos de la región
-                api_response = call_coordinates_api(region_data)
+                    if api_response:
+                        new_lat = api_response.get('lat_subnivel_4') or api_response.get(
+                            'lat_subnivel_3') or "0"
+                        new_lon = api_response.get('lon_subnivel_4') or api_response.get(
+                            'lon_subnivel_3') or "0"
+                    else:
+                        new_lat, new_lon = get_coordinates_osm_direct(province)
 
-                if not api_response:
-                    logging.warning(
-                        f"[Documento ID: {document_id}] No se recibió respuesta de la API para la región: {region}")
-                    continue
+                    if new_lat is None or new_lon is None:
+                        new_lat = "0,0"
+                        new_lon = "0,0"
+                        logging.warning(
+                            f"[Documento ID: {document_id}] Coordenadas no válidas para la región: {region}. lat={new_lat}, lon={new_lon}")
 
-                # Extrae las nuevas coordenadas de la respuesta de la API
-                new_lat = api_response.get(
-                    'lat_subnivel_4') or api_response.get('lat_subnivel_3')
-                new_lon = api_response.get(
-                    'lon_subnivel_4') or api_response.get('lon_subnivel_3')
+                    if province:
 
-                if new_lat is None or new_lon is None:
-                    logging.warning(
-                        f"[Documento ID: {document_id}] Coordenadas no válidas para la región: {region}. lat={new_lat}, lon={new_lon}")
-                    continue
+                        # Actualiza los datos de la región en el documento
+                        updated_document = update_region_data_in_document(
+                            document, province, new_lat, new_lon)
 
-                # Obtiene el nombre de la provincia o ciudad
-                province = region_data.get(
-                    'province', '') or region_data.get('city', '')
+                else:
+                    region_data = region
+                    new_lat, new_lon = get_coordinates_osm_direct(region)
 
-                if not province:
-                    logging.warning(
-                        f"[Documento ID: {document_id}] No se encontró el campo 'province' o 'city' en los datos de la región: {region_data}")
-                    continue
+                    if new_lat is None or new_lon is None or region.lower() == "unknown":
+                        new_lat = "0,0"
+                        new_lon = "0,0"
+                        logging.warning(
+                            f"[Documento ID: {document_id}] Coordenadas no válidas para la región: {region}. lat={new_lat}, lon={new_lon}")
 
-                # Actualiza los datos de la región en el documento
-                updated_document = update_region_data_in_document(
-                    document, province, new_lat, new_lon)
-
-                if not updated_document:
-                    logging.warning(
-                        f"[Documento ID: {document_id}] No se pudo actualizar el documento para la región: {region}")
-                    continue
+                    updated_document = update_region_data_in_document(
+                        document, region, new_lat, new_lon)
 
                 # Actualiza el documento en MongoDB
                 try:

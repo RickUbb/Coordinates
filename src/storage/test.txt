@@ -198,3 +198,28 @@
                 "lon": "-100.9791600"
             }
         ]
+
+
+
+
+
+
+
+
+
+
+
+                "region_distri": [
+            {
+                "percentage": 0.069932,
+                "region": "Campeche | Province"
+            },
+            {
+                "percentage": 0.636228,
+                "region": "Quintana Roo | State"
+            },
+            {
+                "percentage": 0.293841,
+                "region": "Yucatán | City"
+            }
+        ],

@@ -1,8 +1,8 @@
 """
 coordinates_api.py
 
-Este módulo contiene funciones para interactuar con el servicio de OpenStreetMap (OSM) y obtener coordenadas 
-geográficas (latitud y longitud) de una provincia y ciudad. Además, verifica si las coordenadas ya existen 
+Este módulo contiene funciones para interactuar con el servicio de OpenStreetMap (OSM) y obtener coordenadas
+geográficas (latitud y longitud) de una provincia y ciudad. Además, verifica si las coordenadas ya existen
 en la base de datos y, si no, las agrega a la colección de MongoDB.
 """
 
@@ -90,6 +90,30 @@ def get_coordinates_osm(direction: str, subnivel: int, country_exist: bool):
         print(f"Ocurrió un error inesperado al obtener coordenadas para '{direction}'. "
               f"Detalles del error: {str(e)}")
         return None, None, None
+
+
+def get_coordinates_osm_direct(direction: str):
+    url = f"https://nominatim.openstreetmap.org/search?q={
+        direction}&format=json&limit=1"
+
+    headers = {
+        # Cambiar a correo resgistrado, nombre cualquiera
+        'User-Agent': 'Localizacion (su correo aquí)'
+    }
+
+    response = requests.get(url, headers=headers)
+
+    if response.status_code == 200:
+        data = response.json()
+        if len(data) > 0:
+            latitud = data[0]['lat']
+            longitud = data[0]['lon']
+            return latitud, longitud
+        else:
+            return "0,0", "0,0"
+    else:
+        print(f"Error al realizar la solicitud HTTP: {response.status_code}")
+        return None, None
 
 
 def get_coordinates_from_collection(db, collection_name, search_filter, province, city):

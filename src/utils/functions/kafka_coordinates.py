@@ -38,7 +38,7 @@ except Exception as e:
 # Diccionario que mapea el "type" al nombre de la colección
 COLLECTION_MAP = {
     "dp": "darkPostsFinal",
-    "dpt": "darkPostsTermsFinal",
+    "dpt": "darkPostsTermsFinal2",
     "insi": "indvInsightsFb"
 }
 
@@ -46,8 +46,7 @@ COLLECTION_MAP = {
 REGION_MAP = {
     "State": "province",
     "Province": "province",
-    "City": "city",
-    "Country": "country"
+    "City": "city"
 }
 
 # URL de la API externa
@@ -197,6 +196,12 @@ def update_region_data_in_document(document, region, new_lat, new_lon):
         updated = False
 
         for region_obj in document.get('region_distri', []):
+
+            if 'region' not in region_obj:
+                logging.warning(
+                    f"Objeto sin campo 'region' encontrado y omitido: {region_obj}")
+                continue
+
             if region in region_obj['region']:
                 region_obj['lat'] = new_lat
                 region_obj['lon'] = new_lon
